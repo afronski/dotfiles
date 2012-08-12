@@ -1,5 +1,5 @@
-afronski setting files
-======================
+Configuration files
+===================
 
-For now repository contains:
-- gvim/vim settings
+Settings for:
+- gvim/vim
