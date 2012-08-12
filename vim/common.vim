@@ -83,9 +83,6 @@ nnoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" Rope settings.
-inoremap <leader>j <ESC>:RopeGotoDefinition<cr>
-
 " Get Rid of stupid Goddamned help keys.
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -166,10 +163,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
-
-" Rope Plugin settings.
-imap <leader>j <ESC>:RopeGotoDefinition<cr>
-nmap <leader>j <ESC>:RopeGotoDefinition<cr>
 
 " Tagbar key bindings.
 nmap <leader>l <ESC>:TagbarToggle<cr>
