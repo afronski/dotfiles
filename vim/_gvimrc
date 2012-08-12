@@ -1,0 +1,13 @@
+source $VIMRUNTIME/../common.vim
+
+set guifont=Monaco:h9             	" Font family and font size.
+set antialias                     	" MacVim: smooth fonts.
+
+set lines=50 columns=155
+
+set langmenu=en_US.UTF-8          	" Sets the language of the menu (gvim).
+
+set guioptions-=T                 	" Hide toolbar.
+set guioptions-=m               	" Hide menu.
+set guioptions-=L                 	" Don't show left scrollbar
+set guioptions-=r                 	" Don't show right scrollbar

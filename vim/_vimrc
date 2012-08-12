@@ -1,0 +1,2 @@
+source $VIMRUNTIME/mswin.vim
+source $VIMRUNTIME/../common.vim
