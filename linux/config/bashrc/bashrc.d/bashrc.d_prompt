@@ -1,0 +1,12 @@
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:(\1)/'
+}
+
+function calculate_prompt() {
+    _EXIT_STATUS=$?
+    [ $_EXIT_STATUS != 0 ] && _EXIT_STATUS_STR="\[${BRed}\]<$_EXIT_STATUS> "
+    PS1="$_EXIT_STATUS_STR\[${Green}\]\u\[${BBlue}\]@\[${Yellow}\]\h \[${BWhite}\]\w\[${BGreen}\]$(parse_git_branch)\[${BBlue}\] -> \[${Color_Off}\]"
+    unset _EXIT_STATUS_STR
+}
+
+PROMPT_COMMAND=calculate_prompt

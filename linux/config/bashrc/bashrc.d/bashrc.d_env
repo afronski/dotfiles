@@ -1,0 +1,7 @@
+export PATH="/usr/lib/colorgcc/bin:$PATH"
+export PATH="$PATH:/home/afronski/.gem/ruby/1.9.1/bin"
+
+export GOPATH="~/repositories/go"
+
+# Proper handling terminal resize
+shopt -s checkwinsize
