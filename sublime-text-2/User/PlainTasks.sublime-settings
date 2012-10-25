@@ -1,0 +1,11 @@
+{
+  "font_size": 10,
+  "font_face": "Consolas",
+  "font_options": [ "subpixel_antialias", "no_round", "directwrite"],
+  "draw_indent_guides": true,
+  "line_numbers": true,
+  "gutter": true,
+  "margin": 4,
+  "tab_size": 4,
+  "translate_tabs_to_spaces": true
+}

@@ -1,0 +1,10 @@
+{
+    "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+    "draw_white_space": "all",
+    "font_size": 8,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "translate_tabs_to_spaces": true
+}
