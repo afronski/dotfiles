@@ -1,6 +1,0 @@
-{
-    "default_browser": "chromium",
-
-    "statusbar_file_size" : true,
-    "confirm_before_deleting" : false
-}

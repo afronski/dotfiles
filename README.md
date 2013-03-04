@@ -1,6 +1,6 @@
 # dotfiles-repository #
 
-Yet another config files for vim, bash and other tools.
+Yet another config files for etc, vim, bash and other tools.
 
 *Inspirations:*
 
