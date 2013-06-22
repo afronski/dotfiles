@@ -1,4 +1,4 @@
-# dotfiles-repository #
+# dotfiles #
 
 Yet another config files for etc, vim, bash and other tools.
 
