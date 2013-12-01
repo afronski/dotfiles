@@ -1,7 +1,10 @@
-export PATH="/usr/lib/colorgcc/bin:$PATH"
-export PATH="$PATH:/home/afronski/.gem/ruby/1.9.1/bin"
+export PATH="/usr/lib/colorgcc/bin:/opt/libbow/bin:$PATH"
+export PATH="$PATH:/home/afronski/.user-scripts:/opt/android-sdk/platform-tools/:/home/afronski/Clones/v8/out/x64.release/"
 
-export GOPATH="~/repositories/go"
+export NSS_SSL_CBC_RANDOM_IV=0
 
-# Proper handling terminal resize
+# Proper handling terminal resize.
 shopt -s checkwinsize
+
+# Disable non-breaking space.
+setxkbmap -option "nbsp:none"

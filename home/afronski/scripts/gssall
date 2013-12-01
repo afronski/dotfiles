@@ -1,0 +1,10 @@
+#!/bin/sh
+for D in `find . -maxdepth 1 -type d`
+do
+    pushd $D > /dev/null
+    if [ -e ".git" ]; then
+        echo "$D"
+        git status --short
+    fi
+    popd > /dev/null
+done

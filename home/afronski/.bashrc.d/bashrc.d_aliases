@@ -1,6 +1,22 @@
-export EDITOR=vim
-
+alias emacs='emacs -nw'
+alias emacsx='\emacs' 
 alias ls='ls --color=auto'
+alias ll='ls -lah'
 alias grep='grep --color=auto'
 alias mc='mc -b'
-alias yo='yeoman'
+
+alias giclo='git clone'
+alias gss='git status -s'
+alias gadd='git add . -v'
+alias grem='git add -u -v'
+
+alias sst='svn status'
+alias sdff='svn diff'
+
+alias "brightness"="/bin/bash /usr/bin/asus-screen-brightness"
+alias "kbd-backlit"="/bin/bash /usr/bin/asus-kbd-backlight"
+alias "pidgin"="NSS_SSL_CBC_RANDOM_IV=0 pidgin"
+
+alias "list-of-listening-proceses"="lsof -i -P | grep -i 'listen'"
+
+export EDITOR='emacs'
