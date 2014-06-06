@@ -1,3 +1,7 @@
+# Not needed to store inside repository:
+
+# Excluded:
+
+# Invalid stuff:
 *.swp
-vim73/
 *~
