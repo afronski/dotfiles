@@ -22,7 +22,6 @@
 /.xmonad/*.o
 /.xmonad/*.errors
 /.xmonad/xmonad-x86_64*
-/.xmonad/xsession
 /.xmonad/wallpapers/*.jpg
 
 !/.xinitrc
