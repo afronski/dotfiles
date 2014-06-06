@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+    echo "You have to pass git command as first argument."
+    exit 1
+fi
+
+for DIR in *; do
+    if [ -d "$DIR" ]; then
+        pushd $DIR 2>&1 > /dev/null
+
+        if [ -d ".git" ]; then
+            echo "$DIR:"
+            $1
+        fi
+    
+        popd 2>&1 > /dev/null
+    fi
+done

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Script to launch dmenu with colors matching IR_Black theme
+
+TERMINAL="urxvt --hold -e "
+RUN=`yeganesh -x -- -fn 'xft:uushi-9' -nb '#000000' -nf '#FFFFFF' -sb '#7C7C7C' -sf '#CEFFAC' -p 'Run:'`
+
+case $RUN in
+  *\;)  exec `echo $TERMINAL $RUN | sed -e 's/;$//'`;;
+  *)    exec $RUN;;
+esac

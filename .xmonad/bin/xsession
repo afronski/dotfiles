@@ -1,0 +1,40 @@
+#!/bin/sh
+# Script to configure X, start common apps, and start xmonad.
+
+# Configure PATH so that we can access our scripts below.
+PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+
+# Configure X.
+xsetroot -cursor_name left_ptr &
+xrdb ~/.Xresources &
+setxkbmap -layout pl
+
+# Wallpaper.
+feh --bg-scale ~/.xmonad/wallpapers/triangles.jpg
+
+# Start slock.
+xautolock -time 20 -locker slock &
+
+# Start sound server.
+pulseaudio --start &
+
+# Useful daemons.
+urxvtd -f -o -q
+thunar --daemon &
+
+# NetworkManager applet.
+nm-applet &
+
+# Start IM applications.
+pidgin &
+skype &
+
+# Disable non-breaking space key combination with use of Alt-Gr and Space.
+setxkbmap -option "nbsp:none"
+
+# Tray, unclutter and Compton with customized settings.
+tray &
+unclutter &
+compton -b --config ~/.compton.conf
+
+exec dbus-launch --sh-syntax --exit-with-session xmonad

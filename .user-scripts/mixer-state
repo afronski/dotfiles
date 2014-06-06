@@ -1,0 +1,11 @@
+#!/bin/sh
+
+STATE=$(amixer get Master | grep "Front Left:" | awk '{ print $6; }')
+
+if [ "$STATE" = "[on]" ]; then
+    echo "⮞"
+elif [ "$STATE" == "[off]" ]; then
+    echo "⮝"
+else
+    echo "N/A"
+fi

@@ -1,7 +1,34 @@
-# Not needed to store inside repository:
+# Ignore everything:
+/*
 
-# Excluded:
+# Included paths:
+!/.gitignore
 
-# Invalid stuff:
-*.swp
-*~
+!/README.md
+!/License - MIT.md
+
+!/.old-stuff/
+
+!/.vim/
+/.vim/.netrwhist*
+
+!/.vimrc
+
+!/.user-scripts/
+/.user-scripts/v*
+
+!/.xmonad/
+/.xmonad/*.hi
+/.xmonad/*.o
+/.xmonad/*.errors
+/.xmonad/xmonad-x86_64*
+/.xmonad/xsession
+/.xmonad/wallpapers/*.jpg
+
+!/.xinitrc
+
+!/.emacs.d
+/.emacs.d/session*
+/.emacs.d/elpa/
+/.emacs.d/auto-save-list/
+/.emacs.d/*~
