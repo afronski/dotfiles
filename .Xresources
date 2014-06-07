@@ -1,0 +1,44 @@
+#include "/home/afronski/.colors/blue"
+
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+urxvt.depth: 32
+urxvt.background: [80]#000000
+urxvt.foreground: #ffffff
+
+urxvt*scrollBar: false
+
+urxvt*letterspace: -5
+
+urxvt*internalBorder: 10
+
+urxvt*cursorUnderline: 1
+urxvt*cursorBlink: 1
+
+urxvt*font: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
+urxvt*boldFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
+urxvt*italicFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
+urxvt*boldItalicFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
+
+urxvt*scrollTtyOutput: false
+urxvt*scrollWithBuffer: true
+urxvt*scrollTtyKeypress: true
+urxvt*saveLines: 100000
+
+XClock*foreground: #ffffff
+XClock*background: #000000
+XClock*update: 1
+
+XClock*geometry: 210x210+1450+16
+
+XClock.Clock.majorColor: rgba:ff/ff/ff/ff
+XClock.Clock.minorColor: rgba:ff/ff/ff/ff
+XClock.Clock.hourColor: rgba:66/66/66/ff
+XClock.Clock.minuteColor: rgba:80/80/80/ff
+XClock.Clock.secondColor: rgba:ea/ea/ea/ff
