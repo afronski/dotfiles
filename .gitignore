@@ -35,3 +35,10 @@
 !/.colors/
 !/.Xresources
 !/.xscreensaver
+
+!/.dosbox/
+
+!/.ncmpcpp/
+/.ncmpcpp/*.log
+
+!/.compton.conf
