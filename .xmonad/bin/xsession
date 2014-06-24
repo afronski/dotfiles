@@ -10,7 +10,7 @@ xrdb ~/.Xresources &
 setxkbmap -layout pl
 
 # Wallpaper.
-feh --bg-scale ~/.xmonad/wallpapers/tron.jpg
+feh --bg-scale ~/.xmonad/wallpapers/in_absentia.jpg
 
 # Start slock.
 xautolock -time 20 -locker slock &
