@@ -42,3 +42,5 @@
 /.ncmpcpp/*.log
 
 !/.compton.conf
+
+!/.stalonetrayrc
