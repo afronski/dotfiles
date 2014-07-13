@@ -3,6 +3,7 @@
 
 # Included paths:
 !/.gitignore
+!/.gitconfig
 
 !/README.md
 !/License - MIT.md
@@ -22,7 +23,6 @@
 /.xmonad/*.o
 /.xmonad/*.errors
 /.xmonad/xmonad-x86_64*
-/.xmonad/wallpapers/*.jpg
 
 !/.xinitrc
 

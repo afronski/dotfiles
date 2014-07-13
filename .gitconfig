@@ -1,0 +1,18 @@
+[user]
+	email = afronski@gmail.com
+	name = Wojciech Gawronski
+[push]
+	default = simple
+[alias]
+	a = add -v .
+	u = add -u -v
+	st = status --short
+	co = checkout
+	cm = commit -m
+	unpushed = log origin/master..HEAD
+	wdiff = !git --no-pager diff --word-diff
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
