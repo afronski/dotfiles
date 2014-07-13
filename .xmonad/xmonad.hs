@@ -283,7 +283,7 @@ customizedLogHook destination = dynamicLogWithPP xmobarPP {
 --------------------------------------------------------------------
 
 main = do
-  xmproc <- spawnPipe "sleep 3 && xmobar ~/.xmonad/xmobar.hs"
+  xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
   xmonad $ defaults {
     logHook = customizedLogHook xmproc,
     manageHook = manageDocks <+> customizedManagementHooks,
