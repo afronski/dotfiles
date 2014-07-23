@@ -2,8 +2,17 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
+;; Erlang mode.
+(setq load-path (cons  "/usr/lib/erlang/lib/tools-2.6.15/emacs" load-path))
+(setq erlang-root-dir "/usr/lib/erlang")
+(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
+(require 'erlang-start)
+
 ;; Hide this ugly splash screen.
 (setq inhibit-splash-screen t)
+
+;; Use spaces only.
+(setq-default indent-tabs-mode nil)
 
 ;; Adding package repositories.
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -14,6 +23,12 @@
 ;; and the keypad delete the character under the cursor and to the right
 ;; under X, instead of the default, backspace behavior.
 (global-set-key [delete] 'delete-char)
+
+;; CTRL-C, CTRL-X, CTRL-V - CuaMode
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil)    ;; Don't tabify after rectangle commands
+(transient-mark-mode 1)                  ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t)      ;; Standard Windows behaviour
 
 ;; Emacs will not automatically add new lines.
 (setq next-line-add-newlines nil)
@@ -28,6 +43,7 @@
 ;; Displays the time in the status bar.
 (display-time)
 
+
 ;; Emacs will not automatically add new lines.
 (setq next-line-add-newlines nil)
 
@@ -37,7 +53,7 @@
 ;; Changes all yes/no questions to y/n type.
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Scroll down with the cursor,move down the buffer one 
+;; Scroll down with the cursor,move down the buffer one
 ;; line at a time, instead of in larger amounts.
 (setq scroll-step 1)
 
@@ -64,17 +80,17 @@
 
 ;; Enable line numbering.
 (require 'linum)
-(global-linum-mode t)   
+(global-linum-mode t)
 
 ;; Show trailing whitespace.
 (require 'whitespace)
-(setq show-trailing-whitespace t)      
+(setq show-trailing-whitespace t)
 
 ;; JavaScript configuration file.
 ;;(load "js-config")
-  
+
 ;; Configuration for org-mode.
-;; Enable it first, then add all files from specific 
+;; Enable it first, then add all files from specific
 ;; directories agenda files.
 (require 'org)
 (setq org-agenda-files (list "~/Repositories/notes"))
@@ -90,7 +106,7 @@
 ;;   TASK is a closed, isolated issue which should be done in near future.
 ;;   PROJECT is a near to the dictionary definition (task which takes time and effort).
 ;;   DREAM should be done before next year.
-;;   FUTURE is an isolated task which should be done in far future (next month, year, undetermined). 
+;;   FUTURE is an isolated task which should be done in far future (next month, year, undetermined).
 ;;
 ;;   DONE is completed (date is not important, however it should be logged as well).
 ;;   SUSPENDED is state where task is suspended for unspecified time from described reason.
