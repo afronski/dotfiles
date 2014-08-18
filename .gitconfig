@@ -16,3 +16,5 @@
 	trustExitCode = false
 [merge]
 	tool = sublime
+[credential]
+	helper = cache --timeout=3600
