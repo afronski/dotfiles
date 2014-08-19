@@ -13,7 +13,7 @@ setxkbmap -layout pl
 feh --bg-center ~/.xmonad/wallpapers/being-the-worst.jpg
 
 # Dunst Notification System.
-dunst
+dunst &
 
 # Start slock.
 xautolock -time 20 -locker slock &
