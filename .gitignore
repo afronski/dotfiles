@@ -18,6 +18,10 @@
 !/.user-scripts/
 /.user-scripts/v*
 
+!/.config/
+/.config/*
+!/.config/dunst
+
 !/.xmonad/
 /.xmonad/*.hi
 /.xmonad/*.o
