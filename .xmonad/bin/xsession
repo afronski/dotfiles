@@ -25,6 +25,9 @@ pulseaudio --start &
 urxvtd -f -o -q
 thunar --daemon &
 
+# Disable touchpad when typing.
+syndaemon -k -i 1 &
+
 # NetworkManager applet.
 nm-applet &
 
