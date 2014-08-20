@@ -24,6 +24,7 @@ pulseaudio --start &
 # Useful daemons.
 urxvtd -f -o -q
 thunar --daemon &
+xbindkeys
 
 # Disable touchpad when typing.
 syndaemon -k -i 1 &

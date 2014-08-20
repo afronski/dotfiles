@@ -1,0 +1,23 @@
+"asus-kbd-backlight up"
+    m:0x0 + c:238
+    XF86KbdBrightnessUp
+
+"asus-kbd-backlight down"
+    m:0x0 + c:237
+    XF86KbdBrightnessDown
+
+"pamixer --toggle-mute"
+    m:0x0 + c:121
+    XF86AudioMute
+
+"pamixer --decrease 5"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+
+"pamixer --increase 5"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
+
+"toggle-touchpad.sh"
+    m:0x0 + c:199
+    XF86TouchpadToggle
