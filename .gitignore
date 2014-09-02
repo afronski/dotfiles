@@ -50,3 +50,6 @@
 !/.stalonetrayrc
 
 !/.xbindkeysrc
+
+!/.zshrc
+!/.zlogin
