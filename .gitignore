@@ -21,6 +21,8 @@
 !/.config/
 /.config/*
 !/.config/dunst
+!/.config/htop/
+!/.config/htop/htoprc
 
 !/.xmonad/
 /.xmonad/*.hi
