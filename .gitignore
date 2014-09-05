@@ -57,4 +57,7 @@
 !/.zlogin
 
 !/.fonts.conf
+!/.config/
+!/.config/fontconfig/
+!/.config/fontconfig/fonts.conf
 !/.fonts/
