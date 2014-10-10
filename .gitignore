@@ -61,3 +61,5 @@
 !/.config/fontconfig/
 !/.config/fontconfig/fonts.conf
 !/.fonts/
+
+!/.ghci
