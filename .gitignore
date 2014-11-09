@@ -37,6 +37,7 @@
 /.emacs.d/elpa/
 /.emacs.d/auto-save-list/
 /.emacs.d/*~
+/.emacs.d/themes/*.elc
 
 !/.colors/
 !/.Xresources

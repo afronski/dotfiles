@@ -43,7 +43,6 @@
 ;; Displays the time in the status bar.
 (display-time)
 
-
 ;; Emacs will not automatically add new lines.
 (setq next-line-add-newlines nil)
 
@@ -56,6 +55,7 @@
 ;; Scroll down with the cursor,move down the buffer one
 ;; line at a time, instead of in larger amounts.
 (setq scroll-step 1)
+(scroll-bar-mode -1)
 
 ;; do not make backup files
 (setq make-backup-files nil)
@@ -134,3 +134,24 @@
 ;; Haskell Mode
 (add-hook 'haskell-mode-hook 'haskell-indent-mode)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
+;; ESC quits.
+(defun minibuffer-keyboard-quit ()
+    "Abort recursive edit. In Delete Selection mode, if the mark is active, just deactivate it;
+     then it takes a second \\[keyboard-quit] to abort the minibuffer."
+    (interactive)
+    (if (and delete-selection-mode transient-mark-mode mark-active)
+        (setq deactivate-mark  t)
+      (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
+      (abort-recursive-edit)))
+
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
+;; Powerline.
+(require 'powerline)
+;;(powerline-evil-vim-color-theme)
+(display-time-mode t)
