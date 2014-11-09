@@ -67,7 +67,7 @@
 (transient-mark-mode 1)
 
 ;; Loading paths (also for installed packages).
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "/home/afronski/.emacs.d/lisp")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa")
@@ -93,7 +93,7 @@
 ;; Enable it first, then add all files from specific
 ;; directories agenda files.
 (require 'org)
-(setq org-agenda-files (list "~/Repositories/notes"))
+(setq org-agenda-files (list "~/Repositories/playground-notes"))
 
 ;; Set proper key shortcuts for org-mode.
 (define-key global-map "\C-cl" 'org-store-link)
