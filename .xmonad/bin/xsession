@@ -10,7 +10,7 @@ xrdb ~/.Xresources &
 setxkbmap -layout pl
 
 # Wallpaper.
-feh --bg-center ~/.xmonad/wallpapers/working-hard-or-hardly-working.png
+feh --bg-center ~/.xmonad/wallpapers/being-the-worst.jpg
 
 # Dunst Notification System.
 dunst &
