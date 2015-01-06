@@ -1,6 +1,5 @@
 --------------------------------------------------------------------------
--- afronski                   February 2014
--- xmonad config used by Wojciech Gawroński
+-- xmonad config created and used by afronski (Wojtek Gawroński)
 --------------------------------------------------------------------------
 
 import System.IO
