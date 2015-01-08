@@ -44,4 +44,6 @@ tray &
 unclutter &
 compton -b --config ~/.compton.conf
 
+mpdas &
+
 exec dbus-launch --sh-syntax --exit-with-session xmonad
