@@ -39,6 +39,13 @@
 /.emacs.d/*~
 /.emacs.d/themes/*.elc
 
+!/.emacs.d.old
+/.emacs.d.old/session*
+/.emacs.d.old/elpa
+/.emacs.d.old/auto-save-list/
+/.emacs.d.old/*~
+/.emacs.d.old/themes/*.elc
+
 !/.colors/
 !/.Xresources
 !/.xscreensaver
