@@ -33,6 +33,7 @@
 !/.xinitrc
 
 !/.emacs.d
+/.emacs.d/url/
 /.emacs.d/session*
 /.emacs.d/elpa/
 /.emacs.d/auto-save-list/
