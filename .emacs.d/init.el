@@ -70,3 +70,7 @@
 
 ; Load Solarized themes.
 (load-theme 'solarized t)
+
+; Enable no-easy-keys.
+(require 'no-easy-keys)
+(no-easy-keys 1)
