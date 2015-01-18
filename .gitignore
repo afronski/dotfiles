@@ -64,6 +64,10 @@
 
 !/.zshrc
 !/.zlogin
+!/.zlogout
+!/.zpreztorc
+!/.zprofile
+!/.zshenv
 
 !/.fonts.conf
 !/.config/
