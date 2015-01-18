@@ -1,42 +1,51 @@
-#include "/home/afronski/.colors/blue"
+#include "/home/afronski/.colors/solarized"
 
 Xft.dpi: 96
 Xft.rgba: rgb
-Xft.antialias: 1
-Xft.hinting: 1
-Xft.autohint: 0
-Xft.hintstyle: hintslight
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
+urxvt.font: xft:Inconsolata\-dz for Powerline:pixelsize=16:style=Medium:antialias=true
+urxvt.boldFont: xft:Inconsolata\-dz for Powerline:pixelsize=16:style=Bold:antialias=true
+urxvt.italicFont: xft:Inconsolata\-dz for Powerline:pixelsize=16:style=Italic:antialias=true
+urxvt.boldItalicFont: xft:Inconsolata\-dz for Powerline:pixelsize=16:style=Bold Italic:antialias=true
+
+urxvt.colorIT: #87af5f
+urxvt.colorBD: #d7d7d7
+urxvt.colorUL: #87afd7
+
 urxvt.depth: 32
-urxvt.background: [80]#000000
-urxvt.foreground: #ffffff
+urxvt.background: [90]#002b36
+urxvt.foreground: #657b83
+urxvt.fadeColor: #002b36
+urxvt.cursorColor: #93a1a1
+urxvt.pointerColorBackground: #586e75
+urxvt.pointerColorForeground: #93a1a1
+urxvt.intensityStyles: false
+urxvt.perl-ext-common: default,matcher
+urxvt.internalBorder: 10
+urxvt.scrollBar: off
+urxvt.termName: rxvt-256color
+urxvt.loginShell: true
+urxvt.letterspace: -5
+urxvt.cursorUnderline: 1
+urxvt.cursorBlink: 1
+urxvt.scrollTtyOutput: false
+urxvt.scrollWithBuffer: true
+urxvt.scrollTtyKeypress: true
+urxvt.saveLines: 100000
 
-urxvt*scrollBar: false
-
-urxvt*letterspace: -5
-
-urxvt*internalBorder: 10
-
-urxvt*cursorUnderline: 1
-urxvt*cursorBlink: 1
-
-urxvt*font: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
-urxvt*boldFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
-urxvt*italicFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
-urxvt*boldItalicFont: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
-
-urxvt*scrollTtyOutput: false
-urxvt*scrollWithBuffer: true
-urxvt*scrollTtyKeypress: true
-urxvt*saveLines: 100000
+urxvt.matcher.button: 1
+urxvt.url-launcher: /usr/bin/chromium
+urxvt.keysym.C-Delete: perl:matcher:last
+urxvt.keysym.M-Delete: perl:matcher:list
 
 XClock*foreground: #ffffff
 XClock*background: #000000
 XClock*update: 1
-
 XClock*geometry: 210x210+1450+16
-
 XClock.Clock.majorColor: rgba:ff/ff/ff/ff
 XClock.Clock.minorColor: rgba:ff/ff/ff/ff
 XClock.Clock.hourColor: rgba:66/66/66/ff

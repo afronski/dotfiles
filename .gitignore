@@ -73,6 +73,7 @@
 !/.config/
 !/.config/fontconfig/
 !/.config/fontconfig/fonts.conf
+!/.config/mc/
 !/.fonts/
 
 !/.ghci

@@ -68,8 +68,30 @@
 ; Enable smartscan.
 (smartscan-mode 1)
 
-; Load Solarized themes.
-(load-theme 'solarized t)
+; Load Solarized theme - light by default.
+(defun initialize-solarized-theme (frame)
+  (load-theme 'solarized t)
+  (set-frame-parameter frame 'background-mode 'light)
+  (enable-theme 'solarized))
+
+(defun light-solarized-theme ()
+  (interactive)
+  (set-frame-parameter nil 'background-mode 'light)
+  (enable-theme 'solarized))
+
+(defun dark-solarized-theme ()
+  (interactive)
+  (set-frame-parameter nil 'background-mode 'dark)
+  (enable-theme 'solarized))
+
+(set-frame-parameter nil 'background-mode 'light)
+
+(if (daemonp)
+    (add-hook 'after-make-frame-functions 'initialize-solarized-theme)
+    (load-theme 'solarized t))
+
+(global-set-key (kbd "C-x C-M-l") 'light-solarized-theme)
+(global-set-key (kbd "C-x C-M-d") 'dark-solarized-theme)
 
 ; Enable no-easy-keys.
 (require 'no-easy-keys)
