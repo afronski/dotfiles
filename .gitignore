@@ -38,6 +38,7 @@
 /.emacs.d/elpa/
 /.emacs.d/auto-save-list/
 /.emacs.d/*~
+/.emacs.d/*.eld
 /.emacs.d/themes/*.elc
 
 !/.emacs.d.old
