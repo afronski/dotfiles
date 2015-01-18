@@ -32,20 +32,12 @@
 
 !/.xinitrc
 
-!/.emacs.d
-/.emacs.d/url/
-/.emacs.d/session*
-/.emacs.d/elpa/
-/.emacs.d/auto-save-list/
-/.emacs.d/*~
-/.emacs.d/*.eld
-/.emacs.d/themes/*.elc
-
 !/.emacs.d.old
 /.emacs.d.old/session*
 /.emacs.d.old/elpa
 /.emacs.d.old/auto-save-list/
 /.emacs.d.old/*~
+/.emacs.d.old/*.eld
 /.emacs.d.old/themes/*.elc
 
 !/.colors/
