@@ -14,9 +14,6 @@
 ; Adding new lines on C-n.
 (setq next-line-add-newlines t)
 
-; Disable "easy" bindings.
-(setq guru-warn-only nil)
-
 (defun light-solarized-theme ()
   "Enable light solarized theme."
   (interactive)
