@@ -17,7 +17,7 @@
 
 !/.user-scripts/
 /.user-scripts/v*
-/.user-scripts/boot.sh
+/.user-scripts/boot
 
 !/.config/
 /.config/*
