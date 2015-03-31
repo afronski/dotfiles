@@ -1,0 +1,2 @@
+#!/bin/sh
+node /home/afronski/.nvm/v0.10.33/lib/node_modules/toggl/bin/toggl $@
