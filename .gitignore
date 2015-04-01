@@ -18,6 +18,7 @@
 !/.user-scripts/
 /.user-scripts/v*
 /.user-scripts/boot
+/.user-scripts/gut
 
 !/.config/
 /.config/*
