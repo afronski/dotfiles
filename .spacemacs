@@ -29,6 +29,7 @@
      clojure
      haskell
      ruby
+     vagrant
      python
      shell-scripts
      fsharp
