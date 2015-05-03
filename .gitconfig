@@ -20,3 +20,5 @@
     helper = cache --timeout=3600
 [include]
     path = .gitcredentials
+[core]
+	excludesfile = /home/afronski/.gitignore_global

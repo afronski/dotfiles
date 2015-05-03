@@ -4,6 +4,7 @@
 # Included paths:
 !/.gitignore
 !/.gitconfig
+!/.gitignore_global
 
 !/README.md
 !/License - MIT.md
