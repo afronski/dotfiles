@@ -17,9 +17,7 @@
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
      auto-completion
-     ;; better-defaults
-     ;; (git :variables
-     ;;      git-gutter-use-fringe t)
+     git
      markdown
      org
      syntax-checking
@@ -34,7 +32,6 @@
      shell-scripts
      fsharp
      c-c++
-     git
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -151,6 +148,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (spacemacs/toggle-line-numbers)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (custom-set-faces
    '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
