@@ -51,3 +51,6 @@ XClock.Clock.minorColor: rgba:ff/ff/ff/ff
 XClock.Clock.hourColor: rgba:66/66/66/ff
 XClock.Clock.minuteColor: rgba:80/80/80/ff
 XClock.Clock.secondColor: rgba:ea/ea/ea/ff
+
+Emacs.fontBackend: xft
+Emacs.font: Droid Sans Mono-11
