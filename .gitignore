@@ -20,6 +20,7 @@
 /.user-scripts/v*
 /.user-scripts/boot
 /.user-scripts/gut
+/.user-scripts/goon
 /.user-scripts/rebar*
 
 !/.config/
