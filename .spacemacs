@@ -150,6 +150,8 @@ before layers configuration."
 layers configuration."
   (spacemacs/toggle-line-numbers)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-markup-indent-offset 2)
   (custom-set-faces
    '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
    '(org-level-2 ((t (:inherit outline-2 :height 1.0))))
