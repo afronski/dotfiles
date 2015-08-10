@@ -17,21 +17,29 @@
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
      auto-completion
-     git
-     markdown
      org
      syntax-checking
-     erlang-elixir
-     javascript
+
+     git
+
+     latex
+     markdown
+     erlang
+     elixir
      html
+     javascript
+     typescript
+     react
      clojure
      haskell
      ruby
-     vagrant
      python
-     shell-scripts
+     csharp
      fsharp
      c-c++
+     shell-scripts
+
+     vagrant
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -150,12 +158,20 @@ before layers configuration."
 layers configuration."
   (spacemacs/toggle-line-numbers)
 
-  (setq js-indent-level 2)
+  (setq-default
+   js2-basic-offset 2
 
-  (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-css-indent-offset 2)
-  (setq web-mode-code-indent-offset 2)
-  (setq web-mode-indent-style 2)
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2)
+
+  (with-eval-after-load 'web-mode
+    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (custom-set-faces
