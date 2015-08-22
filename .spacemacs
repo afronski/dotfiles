@@ -173,6 +173,10 @@ layers configuration."
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
+  (setq browse-url-browser-function 'browse-url-generic
+      engine/browser-function 'browse-url-generic
+      browse-url-generic-program "chromium")
+
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (custom-set-faces
    '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
