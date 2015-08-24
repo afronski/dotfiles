@@ -29,6 +29,11 @@
 !/.config/htop/
 !/.config/htop/htoprc
 
+!/.atom/
+/.atom/*
+!/.atom/config.cson
+!/.atom/styles.less
+
 !/.xmonad/
 /.xmonad/*.hi
 /.xmonad/*.o
