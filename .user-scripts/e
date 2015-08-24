@@ -1,2 +1,2 @@
 #!/bin/sh
-emacsclient --alternate-editor="" -c "$@"
+/usr/bin/atom

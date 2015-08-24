@@ -61,7 +61,7 @@ customizedManagementHooks = composeAll [
     className =? "Chromium"                                       --> doShift "Web",
 
     className =? "sublime-text"                                   --> doShift "Code",
-    className =? "emacs"                                          --> doShift "Code",
+    className =? "atom"                                           --> doShift "Code",
 
     className =? "feh"                                            --> doShift "Media",
 
