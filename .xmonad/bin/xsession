@@ -47,7 +47,4 @@ compton -b --config ~/.compton.conf
 # MPD scribble start.
 mpdas &
 
-# Emacs Daemon.
-emacs --daemon
-
 exec dbus-launch --sh-syntax --exit-with-session xmonad
