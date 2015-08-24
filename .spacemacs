@@ -19,6 +19,7 @@
      auto-completion
      org
      syntax-checking
+     spell-checking
 
      git
 
@@ -132,7 +133,7 @@ before layers configuration."
    ;; Transparency can be toggled through `toggle-transparency'.
    dotspacemacs-inactive-transparency 90
    ;; If non nil unicode symbols are displayed in the mode line.
-   ;; dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols t
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters the
    ;; point when it reaches the top or bottom of the screen.
@@ -148,23 +149,33 @@ before layers configuration."
    ;; specified with an installed package.
    ;; Not used for now.
    dotspacemacs-default-package-repository nil
+   ;; Magit status.
+   git-magit-status-fullscreen t
    )
   ;; User initialization goes here
-  )
+)
 
 (defun dotspacemacs/config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq initial-buffer-choice t)
+  (setq
+   initial-scratch-message nil
+   initial-buffer-choice t)
 
   (spacemacs/toggle-line-numbers)
+
+  (setq fci-rule-column 120)
+  (add-hook 'prog-mode-hook #'turn-on-fci-mode)
+  (add-hook 'git-mode-hook #'turn-on-fci-mode)
+
+  (neotree-toggle)
 
   (setq-default
    js2-basic-offset 2
 
-   ;; web-mode
    css-indent-offset 2
+
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
@@ -175,9 +186,10 @@ layers configuration."
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
-  (setq browse-url-browser-function 'browse-url-generic
-      engine/browser-function 'browse-url-generic
-      browse-url-generic-program "chromium")
+  (setq
+   browse-url-browser-function 'browse-url-generic
+   engine/browser-function 'browse-url-generic
+   browse-url-generic-program "chromium")
 
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (custom-set-faces
@@ -186,7 +198,7 @@ layers configuration."
    '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
    '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
    '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
-  )
+   )
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
