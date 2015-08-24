@@ -1,2 +1,4 @@
 #!/bin/bash
 sudo ln -sf /usr/bin/python2 /usr/bin/python
+sudo ln -sf /usr/bin/pip2 /usr/bin/pip
+sudo ln -sf /usr/bin/virtualenv2 /usr/bin/virtualenv
