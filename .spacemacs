@@ -172,7 +172,7 @@ layers configuration."
   (add-hook 'prog-mode-hook #'turn-on-fci-mode)
   (add-hook 'git-mode-hook #'turn-on-fci-mode)
 
-  (neotree-toggle)
+  (neotree-show)
 
   (setq-default
    js2-basic-offset 4
