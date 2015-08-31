@@ -69,7 +69,7 @@
 
 (defun afronski/work-formatting-style ()
   "Formatting style for actual Work projects."
-
+  (interactive)
   (setq-default
    js2-basic-offset 2
 
@@ -87,7 +87,7 @@
 
 (defun afronski/private-formatting-style ()
   "Normal formatting style."
-
+  (interactive)
   (setq-default
    js2-basic-offset 4
 
@@ -228,7 +228,10 @@ layers configuration."
   (add-hook 'git-mode-hook #'turn-on-fci-mode)
 
   (neotree-show)
-  (afronski/work-formatting-style)
+  (afronski/private-formatting-style)
+  (evil-leader/set-key
+    "fP" 'afronski/private-formatting-style
+    "fW" 'afronski/work-formatting-style)
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
