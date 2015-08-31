@@ -16,6 +16,7 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
+     editorconfig
      auto-completion
      org
      syntax-checking
@@ -51,6 +52,56 @@
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'
    dotspacemacs-delete-orphan-packages t))
+
+(defun afronski/config-character-encoding ()
+  (prefer-coding-system 'utf-8)
+  (set-default-coding-systems 'utf-8)
+  (setq locale-coding-system 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (set-keyboard-coding-system 'utf-8)
+  (set-selection-coding-system 'utf-8)
+
+  (if (boundp 'buffer-file-coding-system)
+      (setq-default buffer-file-coding-system 'utf-8)
+    (setq buffer-file-coding-system 'utf-8))
+
+  (setq current-language-environment "UTF-8"))
+
+(defun afronski/work-formatting-style ()
+  "Formatting style for actual Work projects."
+
+  (setq-default
+   js2-basic-offset 2
+
+   css-indent-offset 2
+
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2
+
+   c-basic-offset 2
+
+   tab-width 2
+   indent-tabs-mode nil))
+
+(defun afronski/private-formatting-style ()
+  "Normal formatting style."
+
+  (setq-default
+   js2-basic-offset 4
+
+   css-indent-offset 4
+
+   web-mode-markup-indent-offset 4
+   web-mode-css-indent-offset 4
+   web-mode-code-indent-offset 4
+   web-mode-attr-indent-offset 4
+
+   c-basic-offset 4
+
+   tab-width 4
+   indent-tabs-mode nil))
 
 (defun dotspacemacs/init ()
   "Initialization function.
@@ -156,38 +207,28 @@ before layers configuration."
    git-magit-status-fullscreen t
    )
   ;; User initialization goes here
+  (afronski/config-character-encoding)
 )
 
 (defun dotspacemacs/config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+
   (setq
    initial-scratch-message nil
    initial-buffer-choice t)
 
-  (spacemacs/toggle-line-numbers)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+  (spacemacs/toggle-line-numbers-on)
 
   (setq fci-rule-column 120)
   (add-hook 'prog-mode-hook #'turn-on-fci-mode)
   (add-hook 'git-mode-hook #'turn-on-fci-mode)
 
   (neotree-show)
-
-  (setq-default
-   js2-basic-offset 4
-
-   css-indent-offset 4
-
-   web-mode-markup-indent-offset 4
-   web-mode-css-indent-offset 4
-   web-mode-code-indent-offset 4
-   web-mode-attr-indent-offset 4
-
-   c-basic-offset 4
-
-   tab-width 4     
-   indent-tabs-mode nil)
+  (afronski/work-formatting-style)
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
