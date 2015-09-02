@@ -228,7 +228,7 @@ layers configuration."
   (add-hook 'git-mode-hook #'turn-on-fci-mode)
 
   (neotree-show)
-  (afronski/private-formatting-style)
+  (afronski/work-formatting-style)
   (evil-leader/set-key
     "fP" 'afronski/private-formatting-style
     "fW" 'afronski/work-formatting-style)
