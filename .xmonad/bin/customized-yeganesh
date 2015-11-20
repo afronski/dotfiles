@@ -4,7 +4,7 @@
 PATH=/home/afronski/.user-scripts:$PATH
 
 TERMINAL="urxvt --hold -e "
-RUN=`yeganesh -x -- -fn 'xft:uushi-8' -nb '#000000' -nf '#FFFFFF' -sb '#7C7C7C' -sf '#CEFFAC' -p 'Run:'`
+RUN=`yeganesh -x -- -nb '#000000' -nf '#FFFFFF' -sb '#7C7C7C' -sf '#CEFFAC' -p 'Run:'`
 
 case $RUN in
   e\;)  exec sudo su afronski -c "e";;
