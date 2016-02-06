@@ -22,12 +22,15 @@
      syntax-checking
      spell-checking
 
+     themes-megapack
+
      git
 
      latex
      markdown
      erlang
      elixir
+     elm
      html
      javascript
      typescript
@@ -130,10 +133,11 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light
-                         solarized-dark
-                         leuven
+   dotspacemacs-themes '(solarized-dark
+                         solarized-light
                          monokai
+                         spacemacs-dark
+                         leuven
                          zenburn)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -210,11 +214,7 @@ before layers configuration."
   (afronski/config-character-encoding)
 )
 
-(defun dotspacemacs/config ()
-  "Configuration function.
- This function is called at the very end of Spacemacs initialization after
-layers configuration."
-
+(defun dotspacemacs/user-config ()
   (setq
    initial-scratch-message nil
    initial-buffer-choice t)
@@ -251,7 +251,9 @@ layers configuration."
    '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
    '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
    )
-)
+
+  (setq powerline-default-separator 'nil)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
