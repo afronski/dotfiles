@@ -1,2 +1,2 @@
 #!/bin/sh
-node /home/afronski/.nvm/v0.10.33/lib/node_modules/toggl/bin/toggl $@
+node /home/afronski/.nvm/versions/node/v0.12.9/lib/node_modules/toggl/bin/toggl $@
