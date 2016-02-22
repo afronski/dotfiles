@@ -221,7 +221,7 @@ before layers configuration."
 
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-  (spacemacs/toggle-line-numbers-on)
+  (spacemacs/toggle-line-numbers)
 
   (setq fci-rule-column 120)
   (add-hook 'prog-mode-hook #'turn-on-fci-mode)
