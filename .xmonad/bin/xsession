@@ -8,6 +8,7 @@ PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
 xsetroot -cursor_name left_ptr &
 xrdb ~/.Xresources &
 setxkbmap -layout pl
+# xmodmap ~/.xmodmaprc
 
 # Wallpaper.
 feh --bg-center ~/.xmonad/wallpapers/gargantua.jpg
