@@ -126,12 +126,6 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     -- Mute volume.
     ((modMask .|. controlMask, xK_m), spawn "amixer -q set Master toggle"),
 
-    -- Decrease volume.
-    ((modMask .|. controlMask, xK_j), spawn "amixer -q set Master 10%-"),
-
-    -- Increase volume.
-    ((modMask .|. controlMask, xK_k), spawn "amixer -q set Master 10%+"),
-
     --------------------------------------------------------------------
     -- "Standard" xmonad key bindings
     --------------------------------------------------------------------

@@ -16,6 +16,10 @@
 
 !/.vimrc
 
+!/.xmodmaprc
+
+!/.tmux.conf
+
 !/.user-scripts/
 /.user-scripts/v*
 /.user-scripts/boot
