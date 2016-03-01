@@ -58,7 +58,7 @@ workspacesList = [ "Term", "Web", "Code", "VM", "Media", "IM", "GIMP" ] ++ map s
 --------------------------------------------------------------------------
 
 customizedManagementHooks = composeAll [
-    className =? "Chromium"                                       --> doShift "Web",
+    className =? "chromium"                                       --> doShift "Web",
 
     className =? "sublime-text"                                   --> doShift "Code",
     className =? "Emacs"                                          --> doShift "Code",
