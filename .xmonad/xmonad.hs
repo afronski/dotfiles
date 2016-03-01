@@ -298,6 +298,6 @@ defaults = defaultConfig {
     workspaces          = workspacesList,
     layoutHook          = smartBorders $ customizedLayout,
     manageHook          = customizedManagementHooks,
-
+    handleEventHook     = docksEventHook,
     keys                = customizedKeys
   }
