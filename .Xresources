@@ -8,14 +8,14 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-urxvt.font: xft:Monaco:pixelsize=14:style=Medium:antialias=true
-!urxvt.font: xft:Monaco:pixelsize=22:style=Medium:antialias=true
-urxvt.boldFont: xft:Monaco:pixelsize=14:style=Bold:antialias=true
-!urxvt.boldFont: xft:Monaco:pixelsize=20:style=Bold:antialias=true
-urxvt.italicFont: xft:Monaco:pixelsize=14:style=Italic:antialias=true
-!urxvt.italicFont: xft:Monaco:pixelsize=20:style=Italic:antialias=true
-urxvt.boldItalicFont: xft:Monaco:pixelsize=14:style=Bold Italic:antialias=true
-!urxvt.boldItalicFont: xft:Monaco:pixelsize=20:style=Bold Italic:antialias=true
+urxvt.font: xft:Source Code Pro for Powerline:pixelsize=15:style=Medium:antialias=true
+!urxvt.font: xft:Source Code Pro for Powerline:pixelsize=22:style=Medium:antialias=true
+urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold:antialias=true
+!urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=20:style=Bold:antialias=true
+urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Italic:antialias=true
+!urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=20:style=Italic:antialias=true
+urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold Italic:antialias=true
+!urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=20:style=Bold Italic:antialias=true
 
 urxvt.colorIT: #87af5f
 urxvt.colorBD: #d7d7d7
