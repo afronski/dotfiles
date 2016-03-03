@@ -198,6 +198,8 @@ before layers configuration."
    dotspacemacs-smooth-scrolling t
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    dotspacemacs-smartparens-strict-mode nil
+   ;; Enable line numbers.
+   dotspacemacs-line-numbers t
    ;; If non nil advises quit functions to keep server open when quitting.
    dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
@@ -219,9 +221,11 @@ before layers configuration."
    initial-scratch-message nil
    initial-buffer-choice t)
 
-  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  (setq
+   neo-theme 'ascii
+   neo-hidden-regexp-list '("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.beam$"))
 
-  (spacemacs/toggle-line-numbers)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
   (setq fci-rule-column 120)
   (add-hook 'prog-mode-hook #'turn-on-fci-mode)
