@@ -16,7 +16,6 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     editorconfig
      auto-completion
      org
      syntax-checking
@@ -36,7 +35,7 @@
      typescript
      react
      java
-     idris-lang
+     idris
      sql
      clojure
      haskell
@@ -48,6 +47,13 @@
      shell-scripts
 
      vagrant
+     )
+   ;; List of additional packages that will be installed without being
+   ;; wrapped in a layer. If you need some configuration for these
+   ;; packages, then consider creating a layer. You can also put the
+   ;; configuration in `dotspacemacs/user-config'.
+   dotspacemacs-additional-packages '(
+     editorconfig
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -194,6 +200,8 @@ before layers configuration."
    dotspacemacs-mode-line-unicode-symbols t
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    dotspacemacs-smartparens-strict-mode nil
+   ;; Disabling smooth scrolling.
+   dotspacemacs-smooth-scrolling nil
    ;; Enable line numbers.
    dotspacemacs-line-numbers t
    ;; If non nil advises quit functions to keep server open when quitting.
