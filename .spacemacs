@@ -56,7 +56,9 @@
      editorconfig
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(
+     clojure-snippets
+     )
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'
@@ -234,6 +236,8 @@ before layers configuration."
   (setq fci-rule-column 120)
   (add-hook 'prog-mode-hook #'turn-on-fci-mode)
   (add-hook 'git-mode-hook #'turn-on-fci-mode)
+
+  (spacemacs/toggle-line-numbers)
 
   (neotree-show)
   (afronski/work-formatting-style)
