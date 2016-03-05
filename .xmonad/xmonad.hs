@@ -255,6 +255,7 @@ customizedLayout =  onWorkspace "IM" (avoidStruts $ simpleFloat) $
 --------------------------------------------------------------------
 
 startup = do
+  spawn "/home/afronski/.user-scripts/e"
   spawnOn "Term" terminalName
   spawnOn "Term" terminalName
   spawnOn "Term" terminalName
