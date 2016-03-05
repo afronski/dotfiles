@@ -17,3 +17,7 @@
 "pamixer --increase 5"
     m:0x0 + c:123
     XF86AudioRaiseVolume
+
+# Ambient Light Sensor (ALS) Toggle [Fn a]
+"/usr/share/als-controller/example/switch.sh"
+    m:0x0 + c:248
