@@ -1,3 +1,5 @@
+# Keyboard backlight related keys:
+
 "asus-kbd-backlight up"
     m:0x0 + c:238
     XF86KbdBrightnessUp
@@ -5,6 +7,8 @@
 "asus-kbd-backlight down"
     m:0x0 + c:237
     XF86KbdBrightnessDown
+
+# Sound-related keys:
 
 "pamixer --toggle-mute"
     m:0x0 + c:121
@@ -18,6 +22,17 @@
     m:0x0 + c:123
     XF86AudioRaiseVolume
 
-# Ambient Light Sensor (ALS) Toggle [Fn a]
+# Screen backlight related keys:
+
+"xbacklight + 10%"
+    m:0x0 + c:233
+    XF86MonBrightnessUp
+
+"xbacklight - 10%"
+    m:0x0 + c:232
+    XF86MonBrightnessDown
+
+# Ambient Light Sensor (ALS) Toggle [Fn a]:
+
 "/usr/share/als-controller/example/switch.sh"
     m:0x0 + c:248
