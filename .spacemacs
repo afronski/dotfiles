@@ -25,6 +25,10 @@
 
      git
 
+     ansible
+     terraform
+     dockerfile
+
      latex
      markdown
      erlang
@@ -32,7 +36,6 @@
      elm
      html
      javascript
-     typescript
      react
      java
      idris
@@ -255,6 +258,13 @@ before layers configuration."
    engine/browser-function 'browse-url-generic
    browse-url-generic-program "chromium")
 
+  (setq-default dotspacemacs-configuration-layers '(
+   (org :variables
+        org-enable-github-support t)))
+
+  (setq org-todo-keywords
+   '((sequence "TODO" "IN-PROGRESS" "POSTPONED"
+              "|" "DONE" "CANCELED")))
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (custom-set-faces
    '(org-level-1 ((t (:inherit outline-1 :height 1.0))))

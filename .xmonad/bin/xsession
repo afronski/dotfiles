@@ -48,4 +48,7 @@ compton -b --config ~/.compton.conf
 # MPD last.fm scrobbler start.
 sudo mpdas &
 
+# Disable touchpad when mouse is paired.
+[[ -f /dev/input/mouse0 ]] && /usr/bin/synclient TouchpadOff=1
+
 exec dbus-launch --sh-syntax --exit-with-session xmonad
