@@ -51,7 +51,8 @@ modifierName = mod4Mask
 -- Workspaces
 --------------------------------------------------------------------------
 
-workspacesList = [ "Term", "Web", "Code", "VM", "Media", "IM", "GIMP" ] ++ map show [ 8 .. 9 ]
+workspacesList = [ "Term", "Web", "Code", "Other", "Media", "IM", "GIMP",
+                   "8", "9", "0" ]
 
 --------------------------------------------------------------------------
 -- Management hooks
@@ -163,6 +164,12 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     -- Swap the focused window with the previous window.
     ((modMask .|. shiftMask, xK_k), windows StackSet.swapUp),
 
+    -- Shrink ResizableTall.
+    ((modMask, xK_a), sendMessage MirrorShrink),
+
+    -- Expand ResizableTall.
+    ((modMask, xK_z), sendMessage MirrorExpand),
+
     -- Shrink the master area.
     ((modMask, xK_h), sendMessage Shrink),
 
@@ -185,7 +192,7 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     ((modMask, xK_q), restart "xmonad" True),
 
     -- Showing windows on screens - previous.
-    ((modMask, xK_a), onPrevNeighbour StackSet.view),
+    ((modMask, xK_i), onPrevNeighbour StackSet.view),
 
     -- Showing windows on screens - next.
     ((modMask, xK_o), onNextNeighbour StackSet.view),
@@ -202,12 +209,12 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
   --------------------------------------------------------------------
   -- Workspaces
   --
-  -- mod-[1..9], Switch to workspace N
-  -- mod-shift-[1..9], Move client to workspace N
+  -- MOD + [0..9] - Switch to workspace N
+  -- MOD + SHIFT + [0..9] - Move client to workspace N
   --------------------------------------------------------------------
   [
     ((m .|. modMask, k), windows $ f i)
-      | (i, k) <- zip (XMonad.workspaces conf) [ xK_1 .. xK_9 ]
+      | (i, k) <- zip (XMonad.workspaces conf) [ xK_1, xK_2, xK_3, xK_4, xK_5, xK_6, xK_7, xK_8, xK_9, xK_0 ]
       , (f, m) <- [ (StackSet.greedyView, 0), (StackSet.shift, shiftMask) ]
   ]
 
@@ -216,12 +223,12 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
   --------------------------------------------------------------------
   -- Screens
   --
-  -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
-  -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
+  -- MOD + [,] - Switch to physical/Xinerama screens 1, or 2
+  -- MOD + SHIFT + [,] - Move client to screen 1 or 2
   --------------------------------------------------------------------
   [
     ((m .|. modMask, key), screenWorkspace sc >>= flip whenJust (windows . f))
-      | (key, sc) <- zip [ xK_w, xK_e, xK_r ] [ 0 .. ]
+      | (key, sc) <- zip [ xK_bracketleft, xK_bracketright ] [ 0 .. ]
       , (f, m) <- [ (StackSet.view, 0), (StackSet.shift, shiftMask) ]
   ]
 
@@ -229,18 +236,18 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
 -- Layout
 --------------------------------------------------------------------
 defaultLayouts =  avoidStruts (
+                    Grid |||
                     Tall 1 (3 / 100) (1 / 2) |||
-                    Mirror (Tall 1 (3 / 100) (1 / 2)
+                    Mirror (Tall 1 (3 / 100) (1 / 2)) |||
+                    ResizableTall 1 (3 / 100) (1 / 2) [] |||
+                    Mirror (ResizableTall 1 (3 / 100) (1 / 2) []) |||
+                    tabbed shrinkText customizedTabConfig |||
+                    spiral (6 / 7)
                   ) |||
-                  tabbed shrinkText customizedTabConfig |||
-                  Grid |||
-                  Full |||
-                  spiral (6 / 7)) |||
                   noBorders (fullscreenFull Full)
 
 customizedLayout =  onWorkspace "IM" (avoidStruts $ simpleFloat) $
-                    onWorkspace "Media" (avoidStruts $ simpleFloat) $
-                    onWorkspace "Term" (avoidStruts $ Grid) $
+                    onWorkspace "Code" (avoidStruts $ (tabbed shrinkText customizedTabConfig)) $
                     onWorkspace "GIMP" gimpLayout $
                     defaultLayouts
                       where
