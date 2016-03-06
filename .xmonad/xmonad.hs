@@ -198,7 +198,7 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     ((modMask, xK_o), onNextNeighbour StackSet.view),
 
     -- Moving windows around screens - previous.
-    ((modMask .|. shiftMask, xK_a), onPrevNeighbour StackSet.shift),
+    ((modMask .|. shiftMask, xK_i), onPrevNeighbour StackSet.shift),
 
     -- Moving windows around screens - next.
     ((modMask .|. shiftMask, xK_o), onNextNeighbour StackSet.shift)
@@ -216,20 +216,6 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     ((m .|. modMask, k), windows $ f i)
       | (i, k) <- zip (XMonad.workspaces conf) [ xK_1, xK_2, xK_3, xK_4, xK_5, xK_6, xK_7, xK_8, xK_9, xK_0 ]
       , (f, m) <- [ (StackSet.greedyView, 0), (StackSet.shift, shiftMask) ]
-  ]
-
-  ++
-
-  --------------------------------------------------------------------
-  -- Screens
-  --
-  -- MOD + [,] - Switch to physical/Xinerama screens 1, or 2
-  -- MOD + SHIFT + [,] - Move client to screen 1 or 2
-  --------------------------------------------------------------------
-  [
-    ((m .|. modMask, key), screenWorkspace sc >>= flip whenJust (windows . f))
-      | (key, sc) <- zip [ xK_bracketleft, xK_bracketright ] [ 0 .. ]
-      , (f, m) <- [ (StackSet.view, 0), (StackSet.shift, shiftMask) ]
   ]
 
 --------------------------------------------------------------------
