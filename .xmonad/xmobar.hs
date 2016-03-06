@@ -82,6 +82,7 @@ Config {
           "-x", ""
         ] 10,
       Run Com "/home/afronski/.user-scripts/mixer-state" [] "mixer" 10,
+      Run Com "/home/afronski/.user-scripts/governor" [] "governor" 10,
       Run Date "%a, %d %b %Y, %H: %M" "date" 10,
       Run StdinReader
   ],
@@ -89,5 +90,5 @@ Config {
   sepChar = "%",
   alignSep = "}{",
 
-  template = "%StdinReader% }{%mpd% %mixer% | %multicpu% | %coretemp% | %memory% | %battery% | %wlp3s0%%wlp3s0wi%%enp0s20u2% | <action=/home/afronski/.user-scripts/toggle-clock><fc=#FFFFCC>%date%</fc></action> | %EPKT%"
+  template = "%StdinReader% }{%mpd% %mixer% | %multicpu% (%governor%) | %coretemp% | %memory% | %battery% | %wlp3s0%%wlp3s0wi%%enp0s20u2% | <action=/home/afronski/.user-scripts/toggle-clock><fc=#FFFFCC>%date%</fc></action> | %EPKT%"
 }
