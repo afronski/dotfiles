@@ -185,12 +185,6 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     -- Decrement the number of windows in the master area.
     ((modMask, xK_period), sendMessage (IncMasterN (-1))),
 
-    -- Quit xmonad.
-    ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)),
-
-    -- Restart xmonad.
-    ((modMask, xK_q), restart "xmonad" True),
-
     -- Showing windows on screens - previous.
     ((modMask, xK_i), onPrevNeighbour StackSet.view),
 
@@ -201,7 +195,13 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     ((modMask .|. shiftMask, xK_i), onPrevNeighbour StackSet.shift),
 
     -- Moving windows around screens - next.
-    ((modMask .|. shiftMask, xK_o), onNextNeighbour StackSet.shift)
+    ((modMask .|. shiftMask, xK_o), onNextNeighbour StackSet.shift),
+
+    -- Quit xmonad.
+    ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess)),
+
+    -- Restart xmonad.
+    ((modMask, xK_q), restart "xmonad" True)
   ]
 
   ++
@@ -221,27 +221,28 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
 --------------------------------------------------------------------
 -- Layout
 --------------------------------------------------------------------
-defaultLayouts =  avoidStruts (
-                    Grid |||
-                    Tall 1 (3 / 100) (1 / 2) |||
-                    Mirror (Tall 1 (3 / 100) (1 / 2)) |||
-                    ResizableTall 1 (3 / 100) (1 / 2) [] |||
-                    Mirror (ResizableTall 1 (3 / 100) (1 / 2) []) |||
-                    tabbed shrinkText customizedTabConfig |||
-                    spiral (6 / 7)
-                  ) |||
-                  noBorders (fullscreenFull Full)
+defaultLayouts = avoidStruts (
+                   Grid |||
+                   Tall 1 (3 / 100) (1 / 2) |||
+                   Mirror (Tall 1 (3 / 100) (1 / 2)) |||
+                   ResizableTall 1 (3 / 100) (1 / 2) [] |||
+                   Mirror (ResizableTall 1 (3 / 100) (1 / 2) []) |||
+                   tabbed shrinkText customizedTabConfig |||
+                   spiral (6 / 7)
+                 ) |||
+                 noBorders (fullscreenFull Full)
 
-customizedLayout =  onWorkspace "IM" (avoidStruts $ simpleFloat) $
-                    onWorkspace "Code" (avoidStruts $ (tabbed shrinkText customizedTabConfig)) $
-                    onWorkspace "GIMP" gimpLayout $
-                    defaultLayouts
-                      where
-                        gimpLayout = avoidStruts (
-                                      withIM (0.15) (Role "gimp-toolbox") $
-                                      reflectHoriz $
-                                      withIM (0.2) (Role "gimp-dock") Grid
-                                    )
+customizedLayout = onWorkspace "Web" (avoidStruts $ (Tall 1 (3 / 100) (1 / 2))) $
+                   onWorkspace "Code" (avoidStruts $ (tabbed shrinkText customizedTabConfig)) $
+                   onWorkspace "IM" (avoidStruts $ simpleFloat) $
+                   onWorkspace "GIMP" gimpLayout $
+                   defaultLayouts
+                     where
+                       gimpLayout = avoidStruts (
+                           withIM (0.15) (Role "gimp-toolbox") $
+                           reflectHoriz $
+                           withIM (0.2) (Role "gimp-dock") Grid
+                         )
 
 --------------------------------------------------------------------
 -- Startup
