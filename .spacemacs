@@ -17,39 +17,50 @@
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
      auto-completion
+     themes-megapack
+
+     markdown
      org
+     git
+     yaml
+
      syntax-checking
      spell-checking
 
-     themes-megapack
-
-     git
+     shell-scripts
 
      ansible
      terraform
      dockerfile
+     vagrant
 
+     ess
      latex
-     markdown
+     octave
+
      erlang
      elixir
+
+     c-c++
+
      elm
+     haskell
+     idris
+
      html
      javascript
      react
+
      java
-     idris
-     sql
      clojure
-     haskell
+
+     sql
+
      ruby
      python
+
      csharp
      fsharp
-     c-c++
-     shell-scripts
-
-     vagrant
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
