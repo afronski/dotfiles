@@ -120,6 +120,9 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     -- Lock the screen using slock.
     ((modMask .|. controlMask, xK_l), spawn "slock"),
 
+    -- Do a screenshot using scrot.
+    ((modMask .|. controlMask, xK_p), spawn "scrot -t 20 /home/afronski/Screenshots/%Y-%m-%d-%T-screenshot.png"),
+
     -- Launch dmenu via yeganesh.
     -- Use this to launch programs without a key binding.
     ((modMask, xK_p), spawn "customized-yeganesh"),
