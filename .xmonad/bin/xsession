@@ -11,7 +11,7 @@ setxkbmap -layout pl
 xmodmap ~/.xmodmaprc
 
 # Wallpaper.
-feh --bg-center ~/.xmonad/wallpapers/gargantua.jpg
+feh --bg-center ~/.xmonad/wallpapers/bug.jpg
 
 # Dunst Notification System.
 dunst &
