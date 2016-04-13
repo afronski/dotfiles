@@ -1,4 +1,7 @@
+! Theme: Solarized Light
 !#include "/home/afronski/.colors/solarized_light"
+
+! Theme: Solarized Dark
 #include "/home/afronski/.colors/solarized"
 
 Xft.dpi: 96
