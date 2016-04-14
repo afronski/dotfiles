@@ -13,10 +13,13 @@ Xft.lcdfilter: lcddefault
 
 urxvt.font: xft:Source Code Pro for Powerline:pixelsize=15:style=Medium:antialias=true
 !urxvt.font: xft:Source Code Pro for Powerline:pixelsize=25:style=Medium:antialias=true
+
 urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold:antialias=true
 !urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Bold:antialias=true
+
 urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Italic:antialias=true
 !urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Italic:antialias=true
+
 urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold Italic:antialias=true
 !urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Bold Italic:antialias=true
 
@@ -29,7 +32,6 @@ urxvt.background: [90]#002b36
 urxvt.colorIT: #87af5f
 urxvt.colorBD: #d7d7d7
 urxvt.colorUL: #87afd7
-
 urxvt.depth: 32
 urxvt.foreground: #657b83
 urxvt.fadeColor: #002b36
