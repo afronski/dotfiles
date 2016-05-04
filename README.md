@@ -7,6 +7,10 @@ The most important directories:
 - `.emacs.d.old` - if you're interested how I've used *Emacs Prelude* (now I'm using *Spacemacs*).
 - `.old-stuff` - if you're interested how I've used tools in the past e.g. *Vim* or *AwesomeWM*.
 
+Other repositories:
+- [My *Spacemacs*](https://github.com/afronski/spacemacs)
+- [My *prezto*](https://github.com/afronski/prezto)
+
 ## Inspirations
 
 - https://github.com/haridas/Dotfiles
