@@ -15,5 +15,5 @@ Other repositories related to that topic:
 
 ## Inspirations
 
-- https://github.com/haridas/Dotfiles
-- https://github.com/madrobby/dotvim
+- [haridas](https://github.com/haridas/Dotfiles)
+- [madrobby](https://github.com/madrobby/dotvim)
