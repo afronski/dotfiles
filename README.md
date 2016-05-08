@@ -13,7 +13,7 @@ Other repositories related to that topic:
 - [My *Spacemacs* configuration](https://github.com/afronski/spacemacs)
 - [My *prezto* configuration](https://github.com/afronski/prezto)
 
-## Inspirations
+## Inspiration
 
 - [haridas](https://github.com/haridas/Dotfiles)
 - [madrobby](https://github.com/madrobby/dotvim)
