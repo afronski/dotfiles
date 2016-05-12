@@ -7,8 +7,6 @@
 	a = add -v .
 	u = add -u -v
 	st = status --short
-	co = checkout
-	cm = commit -m
 	unpushed = log origin/master..HEAD
 	wdiff = !git --no-pager diff --word-diff
 [mergetool "sublime"]
@@ -17,8 +15,8 @@
 [merge]
 	tool = sublime
 [credential]
-    helper = cache --timeout=3600
+  helper = cache --timeout=3600
 [include]
-    path = .gitcredentials
+  path = .gitcredentials
 [core]
 	excludesfile = /home/afronski/.gitignore_global
