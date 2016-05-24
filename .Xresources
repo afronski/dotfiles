@@ -51,7 +51,6 @@ urxvt.scrollTtyOutput: false
 urxvt.scrollWithBuffer: true
 urxvt.scrollTtyKeypress: true
 urxvt.saveLines: 100000
-
 urxvt.matcher.button: 1
 urxvt.url-launcher: /usr/bin/chromium
 urxvt.keysym.C-Delete: perl:matcher:last
