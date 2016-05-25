@@ -12,8 +12,10 @@
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
 	trustExitCode = false
+[mergetool "magit"]
+	cmd = e --eval "(magit-status)"
 [merge]
-	tool = sublime
+	tool = magit
 [credential]
   helper = cache --timeout=3600
 [include]
