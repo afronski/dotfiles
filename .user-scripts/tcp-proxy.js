@@ -1,7 +1,7 @@
 var sys = require("sys");
 var tcp = require("net");
 
-var encoding = "binary"
+var encoding = "binary";
 var localActive = false;
 
 var verbose = false;
