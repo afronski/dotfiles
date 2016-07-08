@@ -31,7 +31,7 @@ xbindkeys
 syndaemon -k -i 1 &
 
 # NetworkManager applet.
-nm-applet &
+GTK_THEME=Adwaita:dark nm-applet &
 
 # Start IM applications.
 pidgin &
