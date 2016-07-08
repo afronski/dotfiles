@@ -73,6 +73,7 @@
 
 !/.fonts.conf
 !/.config/
+!/.config/gtk-3.0/
 !/.config/fontconfig/
 !/.config/fontconfig/fonts.conf
 !/.config/mc/
