@@ -71,8 +71,7 @@ customizedManagementHooks = composeAll [
 
     className =? "XClock"                                         --> doFloat,
 
-    className =? "Pidgin" <&&> role =? "conversation"             --> doShift "IM",
-    className =? "Pidgin" <&&> role =? "buddy_list"               --> doShift "IM",
+    className =? "Slack"                                          --> doShift "IM",
 
     className =? "Skype" <&&> role =? "ConversationsWindow"       --> doShift "IM",
     className =? "Skype" <&&> role =? ""                          --> doShift "IM",

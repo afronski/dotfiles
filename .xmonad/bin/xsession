@@ -35,6 +35,7 @@ GTK_THEME=Adwaita:dark nm-applet &
 
 # Start IM applications.
 skype &
+slack &
 
 # Disable non-breaking space key combination with use of Alt-Gr and Space.
 setxkbmap -option "nbsp:none"
