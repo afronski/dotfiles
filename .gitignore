@@ -83,3 +83,9 @@
 !/.ghci
 
 !/.spacemacs
+
+!/.accounting/
+/.accounting/*.journal
+!/.accounting/commodities.journal
+
+!/.ledgerrc
