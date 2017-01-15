@@ -11,17 +11,17 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-urxvt.font: xft:Source Code Pro for Powerline:pixelsize=15:style=Medium:antialias=true
-!urxvt.font: xft:Source Code Pro for Powerline:pixelsize=25:style=Medium:antialias=true
+urxvt.font: xft:Source Code Pro:pixelsize=15:style=Medium:antialias=true
+!urxvt.font: xft:Source Code Pro:pixelsize=25:style=Medium:antialias=true
 
-urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold:antialias=true
-!urxvt.boldFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Bold:antialias=true
+urxvt.boldFont: xft:Source Code Pro:pixelsize=15:style=Bold:antialias=true
+!urxvt.boldFont: xft:Source Code Pro:pixelsize=25:style=Bold:antialias=true
 
-urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Italic:antialias=true
-!urxvt.italicFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Italic:antialias=true
+urxvt.italicFont: xft:Source Code Pro:pixelsize=15:style=Italic:antialias=true
+!urxvt.italicFont: xft:Source Code Pro:pixelsize=25:style=Italic:antialias=true
 
-urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=15:style=Bold Italic:antialias=true
-!urxvt.boldItalicFont: xft:Source Code Pro for Powerline:pixelsize=25:style=Bold Italic:antialias=true
+urxvt.boldItalicFont: xft:Source Code Pro:pixelsize=15:style=Bold Italic:antialias=true
+!urxvt.boldItalicFont: xft:Source Code Pro:pixelsize=25:style=Bold Italic:antialias=true
 
 ! Background color for "Solarized Dark".
 urxvt.background: [90]#002b36
