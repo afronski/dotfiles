@@ -8,6 +8,8 @@ nvm install 0.12
 nvm install 4.0
 nvm install 4.1
 nvm install 5.0
+nvm install 6.0
+nvm install 7.0
 
 nvm aliast default 0.12
 
