@@ -59,6 +59,8 @@
 !/.ncmpcpp/
 /.ncmpcpp/*.log
 
+!/.slim.theme
+
 !/.compton.conf
 
 !/.stalonetrayrc
