@@ -51,6 +51,9 @@ sudo mpdas &
 # Disable touchpad when mouse is paired.
 [[ -f /dev/input/mouse0 ]] && /usr/bin/synclient TouchpadOff=1
 
+# Disable horizontal scrolling with two fingers on Touchpad.
+/usr/bin/synclient HorizTwoFingerScroll=0
+
 # Starting SSH agent.
 eval $(ssh-agent)
 
