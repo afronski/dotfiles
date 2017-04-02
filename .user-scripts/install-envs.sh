@@ -22,26 +22,28 @@ asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
 asdf plugin-add rust https://github.com/code-lever/asdf-rust
 asdf plugin-add terraform https://github.com/neerfri/asdf-terraform
 
+rm -rf $HOME/.tool-versions
+
 asdf install nodejs 0.10.48
 asdf install nodejs 0.12.18
 asdf install nodejs 4.3.2
 asdf install nodejs 6.10.1
 asdf install nodejs 7.8.0
 
-echo -e "nodejs 4.3.2\n" >> $HOME/.tool-versions
+echo -e "nodejs 4.3.2" >> $HOME/.tool-versions
 
 asdf install erlang R16B03-1
 asdf install erlang 17.5
 asdf install erlang 18.3
 asdf install erlang 19.3
 
-echo -e "erlang 19.3\n" >> $HOME/.tool-versions
+echo "erlang 19.3" >> $HOME/.tool-versions
 
 asdf install elixir 1.2.6
 asdf install elixir 1.3.4
 asdf install elixir 1.4.2
 
-echo -e "elixir 1.4.2\n" >> $HOME/.tool-versions
+echo "elixir 1.4.2" >> $HOME/.tool-versions
 
 
 
