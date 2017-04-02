@@ -73,8 +73,7 @@ customizedManagementHooks = composeAll [
 
     className =? "Slack"                                          --> doShift "IM",
 
-    className =? "Skype" <&&> role =? "ConversationsWindow"       --> doShift "IM",
-    className =? "Skype" <&&> role =? ""                          --> doShift "IM",
+    className =? "skypeforlinux"                                  --> doShift "IM",
 
     className =? "stalonetray"                                    --> doIgnore,
 

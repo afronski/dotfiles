@@ -38,6 +38,7 @@
 /.xmonad/*.hi
 /.xmonad/*.o
 /.xmonad/*.errors
+/.xmonad/*.state
 /.xmonad/xmonad-x86_64*
 
 !/.xinitrc

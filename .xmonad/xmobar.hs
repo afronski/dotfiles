@@ -1,10 +1,10 @@
 Config {
-  font = "xft:uushi-8",
+  font = "xft:benis uushi-8",
 
   bgColor = "#000000",
   fgColor = "#ffffff",
 
-  position = Static { xpos = 0, ypos = 0, width = 1728, height = 16 },
+  position = Static { xpos = 0, ypos = 0, width = 2368, height = 16 },
   lowerOnStart = True,
 
   commands = [
@@ -23,9 +23,9 @@ Config {
           "-l", "#FFB6B0",
           "-h", "#CEFFAC",
           "--",
-          "-O", "⮒",
-          "-i", "⮎",
-          "-o", "⮐ <left>%"
+          "-O", "AC <left>%",
+          "-i", "IDLE",
+          "-o", "BATT <left>%"
         ] 600,
       Run MultiCpu [
           "-t", "CPU: <total0>% <total1>% <total2>% <total3>%",
@@ -33,26 +33,26 @@ Config {
           "-H", "60",
           "-h", "#FFB6B0",
           "-l", "#CEFFAC",
-          "-n","#FFFFCC",
+          "-n", "#FFFFCC",
           "-w", "3"
         ] 10,
       Run Memory [
           "-t", "MEM: <used>/<total> MB",
-          "-H", "9891",
+          "-H", "16384",
           "-L", "4096",
-          "-h", "lightblue",
+          "-h", "#FFB6B0",
           "-l", "#CEFFAC",
-          "-n", "#FFB6B0"
+          "-n", "lightblue"
         ] 10,
       Run MPD [
           "-t", "<artist> <title> <statei>",
           "--",
-          "-P", "⮓",
-          "-Z", "⮔",
-          "-S", "⮕"
+          "-P", "(PLAYING)",
+          "-Z", "(PAUSED)",
+          "-S", "(MPD)"
         ] 10,
       Run CoreTemp [
-          "-t", "T: <core0>°C <core1>°C",
+          "-t", "T: <core0>°C <core1>°C <core2>°C <core3>°C",
           "-L", "40",
           "-H", "60",
           "-l", "lightblue",
@@ -65,17 +65,17 @@ Config {
         ] 10,
       Run Network "wlp3s0" [
           "-t", "WIFI: <rx>/<tx> ",
-          "-H", "500",
-          "-L", "100",
+          "-H", "250",
+          "-L", "50",
           "-h", "#FFB6B0",
           "-l", "#CEFFAC",
           "-n", "#FFFFCC",
           "-x", ""
         ] 10,
-      Run Network "enp0s20u2" [
+      Run Network "enp0s31f6" [
           "-t", " ETH: <rx>/<tx>",
-          "-H", "500",
-          "-L", "100",
+          "-H", "250",
+          "-L", "50",
           "-h", "#FFB6B0",
           "-l", "#CEFFAC",
           "-n", "#FFFFCC",
@@ -90,5 +90,5 @@ Config {
   sepChar = "%",
   alignSep = "}{",
 
-  template = "%StdinReader% }{%mpd% %mixer% | %multicpu% (%governor%) | %coretemp% | %memory% | %battery% | %wlp3s0%%wlp3s0wi%%enp0s20u2% | <action=/home/afronski/.user-scripts/toggle-clock><fc=#FFFFCC>%date%</fc></action> | %EPKT%"
+  template = "%StdinReader% }{%mpd% %mixer% | %multicpu% (%governor%) | %coretemp% | %memory% | %battery% | %wlp3s0%%wlp3s0wi%%enp0s31f6% | <action=/home/afronski/.user-scripts/toggle-clock><fc=#FFFFCC>%date%</fc></action> | %EPKT%"
 }

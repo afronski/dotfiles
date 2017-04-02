@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # Script to configure X, start common apps, and start xmonad.
 
 # Configure PATH so that we can access our scripts below.
@@ -11,7 +11,7 @@ setxkbmap -layout pl
 xmodmap ~/.xmodmaprc
 
 # Wallpaper.
-feh --bg-center ~/.xmonad/wallpapers/21st-century-schizoid-man.jpg
+feh --bg-fill ~/.xmonad/wallpapers/21st-century-schizoid-man.jpg
 
 # Dunst Notification System.
 dunst &
@@ -34,7 +34,7 @@ syndaemon -k -i 1 &
 GTK_THEME=Adwaita:dark nm-applet &
 
 # Start IM applications.
-skype &
+skypeforlinux &
 slack &
 
 # Disable non-breaking space key combination with use of Alt-Gr and Space.
@@ -57,4 +57,4 @@ sudo mpdas &
 # Starting SSH agent.
 eval $(ssh-agent)
 
-exec dbus-launch --sh-syntax --exit-with-session xmonad
+exec /usr/bin/dbus-launch --sh-syntax --exit-with-session xmonad
