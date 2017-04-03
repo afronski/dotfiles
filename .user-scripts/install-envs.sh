@@ -45,5 +45,8 @@ asdf install elixir 1.4.2
 
 echo "elixir 1.4.2" >> $HOME/.tool-versions
 
+asdf install packer 0.12.3
+
+echo "packer 0.12.3" >> $HOME/.tool-versions
 
 

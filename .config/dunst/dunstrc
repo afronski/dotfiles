@@ -1,5 +1,5 @@
 [global]
-    font = uushi 8
+    font = benshi uushi 8
 
     # allow a small subset of html markup:
     # <b>bold</b>
