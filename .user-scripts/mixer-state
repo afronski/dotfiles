@@ -3,9 +3,9 @@
 STATE=$(amixer get Master | grep "Front Left:" | awk '{ print $6; }')
 
 if [ "$STATE" == "[on]" ]; then
-    echo "⮞"
+    echo "(SOUND)"
 elif [ "$STATE" == "[off]" ]; then
-    echo "⮝"
+    echo "(MUTED)"
 else
     echo "N/A"
 fi
