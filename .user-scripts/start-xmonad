@@ -33,8 +33,7 @@ syndaemon -k -i 1 &
 # NetworkManager applet.
 GTK_THEME=Adwaita:dark nm-applet &
 
-# Start IM applications.
-GTK_THEME=Adwaita:dark skypeforlinux &
+# Start other applications.
 slack &
 
 # Disable non-breaking space key combination with use of Alt-Gr and Space.

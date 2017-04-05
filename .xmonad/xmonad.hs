@@ -251,6 +251,7 @@ customizedLayout = onWorkspace "Web" (avoidStruts $ (Tall 1 (3 / 100) (1 / 2))) 
 
 startup = do
   spawn "/home/afronski/.user-scripts/e"
+  spawn "GTK_THEME=Adwaita:dark skypeforlinux"
   spawnOn "Term" terminalName
   spawnOn "Term" terminalName
   spawnOn "Term" terminalName
