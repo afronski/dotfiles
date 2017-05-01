@@ -59,7 +59,7 @@ urxvt.keysym.M-Delete: perl:matcher:list
 XClock*foreground: #ffffff
 XClock*background: #000000
 XClock*update: 1
-XClock*geometry: 210x210+1450+16
+XClock*geometry: 300x300+2030+16
 XClock.Clock.majorColor: rgba:ff/ff/ff/ff
 XClock.Clock.minorColor: rgba:ff/ff/ff/ff
 XClock.Clock.hourColor: rgba:66/66/66/ff
