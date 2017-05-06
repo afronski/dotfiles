@@ -24,6 +24,7 @@ pulseaudio --start &
 
 # Useful daemons.
 urxvtd -f -o -q
+udiskie -2 &
 thunar --daemon &
 xbindkeys
 
