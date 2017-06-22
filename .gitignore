@@ -6,6 +6,8 @@
 !/.gitconfig
 !/.gitignore_global
 
+!/Makefile
+
 !/README.md
 !/License - MIT.md
 
