@@ -45,6 +45,7 @@
 
 !/.xinitrc
 
+!/.emacs
 !/.emacs.d.old
 /.emacs.d.old/session*
 /.emacs.d.old/elpa
