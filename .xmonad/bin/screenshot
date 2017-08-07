@@ -1,4 +1,4 @@
 #!/bin/sh
 # Take screenshot of entire screen (multi-head) and display shot.
 
-sleep 0.2; scrot -m "$HOME/Screenshots/%Y-%m-%d-%H%M%S_\$wx\$h.png" -e "xdg-open \$f"
+sleep 0.2; scrot -t 20 -m "$HOME/Screenshots/%Y-%m-%d-%H%M%S_\$wx\$h.png" -e "xdg-open \$f"

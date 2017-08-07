@@ -19,6 +19,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.Fullscreen
 import XMonad.Layout.SimpleFloat
 import XMonad.Layout.ResizableTile
+import XMonad.Layout.Spacing
 import XMonad.Layout.PerWorkspace(onWorkspace)
 
 import XMonad.Hooks.SetWMName
@@ -119,7 +120,10 @@ customizedKeys conf@(XConfig { XMonad.modMask = modMask }) = Map.fromList $ [
     ((modMask .|. controlMask, xK_l), spawn "slock"),
 
     -- Do a screenshot using scrot.
-    ((modMask .|. controlMask, xK_p), spawn "scrot -t 20 /home/afronski/Screenshots/%Y-%m-%d-%T-screenshot.png"),
+    ((modMask .|. controlMask, xK_p), spawn "screenshot"),
+
+    -- Do a screenshot using scrot.
+    ((modMask .|. controlMask, xK_o), spawn "select-screenshot"),
 
     -- Launch dmenu via yeganesh.
     -- Use this to launch programs without a key binding.
@@ -235,7 +239,7 @@ defaultLayouts = avoidStruts (
 
 customizedLayout = onWorkspace "Web" (avoidStruts $ (Tall 1 (3 / 100) (1 / 2))) $
                    onWorkspace "Code" (avoidStruts $ (tabbed shrinkText customizedTabConfig)) $
-                   onWorkspace "IM" (avoidStruts $ simpleFloat) $
+                   onWorkspace "IM" (avoidStruts $ spacing 15 $ (Tall 1 (3 / 100) (1 / 2))) $
                    onWorkspace "GIMP" gimpLayout $
                    defaultLayouts
                      where

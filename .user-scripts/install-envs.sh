@@ -42,11 +42,15 @@ echo "erlang 19.3" >> $HOME/.tool-versions
 asdf install elixir 1.2.6
 asdf install elixir 1.3.4
 asdf install elixir 1.4.2
+asdf install elixir 1.5.0
 
 echo "elixir 1.4.2" >> $HOME/.tool-versions
 
 asdf install packer 0.12.3
+asdf install packer 1.0.0
 
 echo "packer 0.12.3" >> $HOME/.tool-versions
 
+asdf install terraform 0.10.0
 
+echo "terraform 0.10.0" >> $HOME/.tool-versions
