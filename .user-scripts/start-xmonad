@@ -11,7 +11,7 @@ setxkbmap -layout pl
 xmodmap ~/.xmodmaprc
 
 # Wallpaper.
-feh --bg-fill ~/.xmonad/wallpapers/21st-century-schizoid-man.jpg
+feh --bg-fill ~/.xmonad/wallpapers/horseshoe-bend.jpg
 
 # Dunst Notification System.
 dunst &
