@@ -11,65 +11,21 @@
 !/README.md
 !/License - MIT.md
 
-!/.old-stuff/
-
-!/.vim/
-/.vim/.netrwhist*
-
-!/.vimrc
-
-!/.xmodmaprc
-
 !/.tmux.conf
 
 !/.user-scripts/
-/.user-scripts/v*
-/.user-scripts/docker-ipsec-fix
-/.user-scripts/boot
-/.user-scripts/gut
-/.user-scripts/goon
-/.user-scripts/rebar*
 
 !/.config/
 /.config/*
-!/.config/dunst
 !/.config/htop/
 !/.config/htop/htoprc
 
-!/.xmonad/
-/.xmonad/*.hi
-/.xmonad/*.o
-/.xmonad/*.errors
-/.xmonad/*.state
-/.xmonad/xmonad-x86_64*
-
-!/.xinitrc
-
 !/.emacs
-!/.emacs.d.old
-/.emacs.d.old/session*
-/.emacs.d.old/elpa
-/.emacs.d.old/auto-save-list/
-/.emacs.d.old/*~
-/.emacs.d.old/*.eld
-/.emacs.d.old/themes/*.elc
-
-!/.colors/
-!/.Xresources
-!/.xscreensaver
 
 !/.dosbox/
 
 !/.ncmpcpp/
 /.ncmpcpp/*.log
-
-!/.slim.theme
-
-!/.compton.conf
-
-!/.stalonetrayrc
-
-!/.xbindkeysrc
 
 !/.zshrc
 !/.zlogin
@@ -78,18 +34,10 @@
 !/.zprofile
 !/.zshenv
 
-!/.fonts.conf
 !/.config/
 !/.config/greg/
-!/.config/gtk-3.0/
-!/.config/fontconfig/
-!/.config/fontconfig/fonts.conf
-!/.config/mc/
-!/.fonts/
 
 !/.ghci
-
-!/.spacemacs
 
 !/.ledgerrc
 

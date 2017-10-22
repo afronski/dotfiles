@@ -1,8 +1,0 @@
-#!/bin/sh
-
-if [ -z "$1" ]; then
-    echo "Pass resolution as a first parameter."
-    exit 1
-fi
-
-sudo xrandr --output eDP1 --mode $1 --output ${2-VGA1} --auto --same-as eDP1

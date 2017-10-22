@@ -1,8 +1,0 @@
-#!/bin/sh
-set -x
-ps cax | grep xclock > /dev/null
-if [ $? -eq 0 ]; then
-    exec pkill xclock
-else
-    exec xclock
-fi
