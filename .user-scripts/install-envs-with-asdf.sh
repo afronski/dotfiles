@@ -40,18 +40,18 @@ asdf install nodejs 8.7.0
 
 echo -e "nodejs 6.11.4" >> $HOME/.tool-versions
 
-#asdf install erlang R16B03-1
-#asdf install erlang 17.5
-#asdf install erlang 18.3
-#asdf install erlang 19.3
-#asdf install erlang 20.1
+ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang R16B03-1
+ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 17.5
+ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 18.3
+ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 19.3
+asdf install erlang 20.1
 
 echo "erlang 19.3" >> $HOME/.tool-versions
 
-#asdf install elixir 1.2.6
-#asdf install elixir 1.3.4
-#asdf install elixir 1.4.5
-#asdf install elixir 1.5.0
+asdf install elixir 1.2.6
+asdf install elixir 1.3.4
+asdf install elixir 1.4.5
+asdf install elixir 1.5.0
 
 echo "elixir 1.5.0" >> $HOME/.tool-versions
 
