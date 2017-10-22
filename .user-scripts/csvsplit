@@ -1,9 +1,0 @@
-#!/bin/sh
-
-tail -n +2 $1 | split -l 100 - splitted_csv_
-for file in splitted_csv_*
-do
-    head -n 1 $1 > tmp_file
-    cat "$file" >> tmp_file
-    mv tmp_file "$file"
-done
