@@ -71,6 +71,3 @@ asdf install golang 1.7.6
 asdf install golang 1.8.4
 
 echo "golang 1.8.4" >> $HOME/.tool-versions
-
-asdf install python 3.6.3
-asdf install python 2.7.16
