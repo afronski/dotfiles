@@ -16,6 +16,9 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(add-to-list 'default-frame-alist '(font . "Monospace-12"))
+(set-face-attribute 'default t :font "Monospace-12")
+
 (defun ensure-package-installed (&rest packages)
   "Assure every package is installed, ask for installation if it's not. Return a list of installed packages or nil for every skipped package."
   (mapcar
