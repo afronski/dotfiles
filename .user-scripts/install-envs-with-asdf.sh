@@ -71,3 +71,9 @@ asdf install golang 1.7.6
 asdf install golang 1.8.4
 
 echo "golang 1.8.4" >> $HOME/.tool-versions
+
+asdf install clojure 1.7.0
+asdf install clojure 1.8.0
+asdf install clojure 1.9.0-beta2
+
+echo "clojure 1.8.0" >> $HOME/.tool-versions
