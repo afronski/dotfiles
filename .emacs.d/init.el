@@ -52,14 +52,16 @@
 (require 'org-bullets)
 (require 'org-journal)
 
-(setq backup-directory-alist `(("." . "~/.emacs-backup")))
+(setq backup-directory-alist `(("." . "~/.emacs.d/backup")))
 
 (setq org-default-notes-file "~/.org/notes/notes.org")
 (setq org-agenda-files (list "~/.org/notes/backlog.org"))
 (setq org-log-done t)
-(setq org-todo-keywords '((sequence "TODO" "WAITING" "|" "DONE" "CANCELLED")))
+(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "CANCELLED")))
 
 (setq org-journal-dir "~/.org/journal/")
+(setq org-archive-location (concat "~/.org/archive/archive.org::* " (format-time-string "%Y-%m-%d (week %V)")))
+
 (setq org-journal-file-format "%Y-%m-%d.org")
 (setq org-journal-date-format "%Y-%m-%d (week %V)")
 
