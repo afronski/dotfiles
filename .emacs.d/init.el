@@ -95,9 +95,6 @@
 	("n" "New note" entry (file+headline "~/.org/notes/notes.org" "Not Reviewed Notes")
 	 "** [%<%Y-%m-%d>] %^{Note title}%? :%^G:\n   %^{Content}\n   %i\n   %a")
 
-	("c" "New code snippet" entry (file+headline "~/.org/notes/notes.org" "Not Reviewed Code Snippets")
-	 "** [%<%Y-%m-%d>] %^{Snippet title}%? :%^G:\n   %^{Content}\n\n   #+BEGIN_SRC %^{Languge| |bash|zsh|yaml|json|cloudformation|erlang|elixir|go}\n   %i\n   #+END_SRC\n   %a")
-
 	("l" "New ledger entry" plain (function capture-ledger-file-name)
 	 "%<%Y-%m-%d> %^{Ledger entry title}%?\n  %^{What|Expenses:Buying:Food:Groceries|%(ledger-meta-data)}  %^{Amount} %^{Currency|PLN|EUR|USD|NOK}\n  %^{From which account|Assets:Account|%(ledger-meta-data)}"
 	 :empty-lines 1)
