@@ -69,6 +69,7 @@ echo "terraform 0.10.7" >> $HOME/.tool-versions
 asdf install golang 1.6.4
 asdf install golang 1.7.6
 asdf install golang 1.8.4
+asdf install golang 1.9.2
 
 echo "golang 1.8.4" >> $HOME/.tool-versions
 

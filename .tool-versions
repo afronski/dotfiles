@@ -4,5 +4,5 @@ erlang 19.3
 elixir 1.5.0
 packer 1.1.1
 terraform 0.10.7
-golang 1.8.4
+golang 1.9.2
 clojure 1.8.0
