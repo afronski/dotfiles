@@ -27,9 +27,10 @@ rm -rf $HOME/.tool-versions
 asdf install ruby 1.9.3-p551
 asdf install ruby 2.2.8
 asdf install ruby 2.3.5
+asdf install ruby 2.4.0
 asdf install ruby 2.4.2
 
-echo -e "ruby 2.4.2" >> $HOME/.tool-versions
+echo -e "ruby 2.4.0" >> $HOME/.tool-versions
 
 asdf install nodejs 0.10.48
 asdf install nodejs 0.12.18
