@@ -55,7 +55,7 @@
 
 (setq org-directory "~/.org")
 (setq org-default-notes-file "~/.org/notes/notes.org")
-(setq org-agenda-files (list "~/.org/notes/backlog.org"))
+(setq org-agenda-files (list "~/.org/notes/backlog.org" "~/.org/notes/events.org"))
 (setq org-log-done t)
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "CANCELLED")))
 
