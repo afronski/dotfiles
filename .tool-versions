@@ -6,3 +6,4 @@ packer 1.1.1
 terraform 0.10.7
 golang 1.9.2
 clojure 1.8.0
+elm 0.18.0

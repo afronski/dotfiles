@@ -79,3 +79,7 @@ asdf install clojure 1.8.0
 asdf install clojure 1.9.0-beta2
 
 echo "clojure 1.8.0" >> $HOME/.tool-versions
+
+asdf install elm 0.18.0
+
+echo "elm 0.18.0" >> $HOME/.tool-versions
