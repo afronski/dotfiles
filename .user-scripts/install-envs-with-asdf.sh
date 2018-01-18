@@ -53,8 +53,9 @@ asdf install elixir 1.2.6
 asdf install elixir 1.3.4
 asdf install elixir 1.4.5
 asdf install elixir 1.5.0
+asdf install elixir 1.6.0
 
-echo "elixir 1.5.0" >> $HOME/.tool-versions
+echo "elixir 1.6.0" >> $HOME/.tool-versions
 
 asdf install packer 0.12.3
 asdf install packer 1.0.0
