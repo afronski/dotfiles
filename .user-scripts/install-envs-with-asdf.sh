@@ -24,10 +24,6 @@ asdf plugin-add terraform https://github.com/neerfri/asdf-terraform
 
 rm -rf $HOME/.tool-versions
 
-asdf install ruby 1.9.3-p551
-asdf install ruby 2.2.8
-asdf install ruby 2.3.5
-asdf install ruby 2.4.0
 asdf install ruby 2.4.2
 
 echo -e "ruby 2.4.0" >> $HOME/.tool-versions
