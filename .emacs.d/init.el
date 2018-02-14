@@ -55,7 +55,7 @@
 
 (setq org-directory "~/.org")
 (setq org-default-notes-file "~/.org/notes/notes.org")
-(setq org-agenda-files (list "~/.org/tasks/backlog.org" "~/.org/tasks/events.org"))
+(setq org-agenda-files (list "~/.org/"))
 (setq org-log-done t)
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "CANCELLED")))
 
@@ -89,7 +89,7 @@
 
 (setq org-capture-templates
       '(
-	("t" "New task" entry (file+headline "~/.org/notes/backlog.org" "Not Reviewed Tasks")
+	("t" "New task" entry (file+headline "~/.org/gtd/inbox.org" "Not Reviewed Tasks")
 	 "** TODO %?\n   %i\n   %a")
 
 	("n" "New note" entry (file+headline "~/.org/notes/notes.org" "Not Reviewed Notes")
