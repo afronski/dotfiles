@@ -15,6 +15,7 @@
 
 !/.user-scripts/
 /.user-scripts/ngrok
+/.user-scripts/lein
 
 !/.config/
 /.config/*
