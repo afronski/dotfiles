@@ -21,6 +21,7 @@ asdf plugin-add packer https://github.com/gozer/asdf-packer
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
 asdf plugin-add rust https://github.com/code-lever/asdf-rust
 asdf plugin-add terraform https://github.com/neerfri/asdf-terraform
+asdf plugin-add scala https://github.com/mtatheonly/asdf-scala
 
 rm -rf $HOME/.tool-versions
 
@@ -80,3 +81,7 @@ echo "clojure 1.8.0" >> $HOME/.tool-versions
 asdf install elm 0.18.0
 
 echo "elm 0.18.0" >> $HOME/.tool-versions
+
+asdf install scala 2.12.2
+
+echo "scala 2.12.2" >> $HOME/.tool-versions
