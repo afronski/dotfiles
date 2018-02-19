@@ -22,6 +22,7 @@ asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
 asdf plugin-add rust https://github.com/code-lever/asdf-rust
 asdf plugin-add terraform https://github.com/neerfri/asdf-terraform
 asdf plugin-add scala https://github.com/mtatheonly/asdf-scala
+asdf plugin-add R https://github.com/iroddis/asdf-R.git
 
 rm -rf $HOME/.tool-versions
 
@@ -85,3 +86,7 @@ echo "elm 0.18.0" >> $HOME/.tool-versions
 asdf install scala 2.12.2
 
 echo "scala 2.12.2" >> $HOME/.tool-versions
+
+asdf install R 3.4.3
+
+echo "R 3.4.3" >> $HOME/.tool-versions
