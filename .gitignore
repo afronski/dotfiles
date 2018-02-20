@@ -17,6 +17,7 @@
 /.user-scripts/ngrok
 /.user-scripts/lein
 /.user-scripts/ninja
+/.user-scripts/wrk
 
 !/.config/
 /.config/*
