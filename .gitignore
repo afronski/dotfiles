@@ -18,6 +18,7 @@
 /.user-scripts/lein
 /.user-scripts/ninja
 /.user-scripts/wrk
+/.user-scripts/wrk2
 
 !/.config/
 /.config/*
