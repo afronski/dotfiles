@@ -19,6 +19,7 @@
 /.user-scripts/ninja
 /.user-scripts/wrk
 /.user-scripts/wrk2
+/.user-scripts/rebar3
 
 !/.config/
 /.config/*
