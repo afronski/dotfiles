@@ -25,6 +25,7 @@ asdf plugin-add scala https://github.com/mtatheonly/asdf-scala
 asdf plugin-add R https://github.com/iroddis/asdf-R.git
 
 rm -rf $HOME/.tool-versions
+touch $HOME/.tool-versions
 
 asdf install ruby 2.4.2
 
@@ -39,21 +40,22 @@ asdf install nodejs 8.7.0
 
 echo -e "nodejs 6.11.4" >> $HOME/.tool-versions
 
-ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang R16B03-1
-ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 17.5
-ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 18.3
-ERLANG_OPENSSL_PATH="$HOME/.openssl-1.0" asdf install erlang 19.3
-asdf install erlang 20.1
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang R16B03-1
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang 17.5.6.9
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang 18.3.4.9
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang 19.3.6.9
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang 20.3.8
+KERL_CONFIGURE_OPTIONS="--with-ssl=/usr/local/openssl-1.0" asdf install erlang 21.0.2
 
-echo "erlang 19.3" >> $HOME/.tool-versions
+echo "erlang 21.0.2" >> $HOME/.tool-versions
 
 asdf install elixir 1.2.6
 asdf install elixir 1.3.4
 asdf install elixir 1.4.5
-asdf install elixir 1.5.0
-asdf install elixir 1.6.0
+asdf install elixir 1.5.3
+asdf install elixir 1.6.6
 
-echo "elixir 1.6.0" >> $HOME/.tool-versions
+echo "elixir 1.6.6" >> $HOME/.tool-versions
 
 asdf install packer 0.12.3
 asdf install packer 1.0.0
