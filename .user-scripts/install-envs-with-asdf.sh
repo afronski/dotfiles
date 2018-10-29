@@ -40,12 +40,10 @@ asdf install nodejs 8.7.0
 
 echo -e "nodejs 6.11.4" >> $HOME/.tool-versions
 
-asdf install erlang R16B03-1
-asdf install erlang 17.5.6.9
 asdf install erlang 18.3.4.9
 asdf install erlang 19.3.6.9
-asdf install erlang 20.3.8
-asdf install erlang 21.0.2
+asdf install erlang 20.3.8.9
+asdf install erlang 21.1.1
 
 echo "erlang 21.0.2" >> $HOME/.tool-versions
 
