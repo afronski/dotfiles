@@ -92,6 +92,6 @@ asdf install R 3.4.3
 
 echo "R 3.4.3" >> $HOME/.tool-versions
 
-asdf install php 7.2.11 
+asdf install php 7.2.11
 
 echo "php 7.2.11" >> $HOME/.tool-versions
