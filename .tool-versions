@@ -9,3 +9,4 @@ clojure 1.8.0
 elm 0.18.0
 scala 2.12.2
 R 3.4.3
+php 7.2.11

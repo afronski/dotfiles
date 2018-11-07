@@ -23,6 +23,7 @@ asdf plugin-add rust https://github.com/code-lever/asdf-rust
 asdf plugin-add terraform https://github.com/neerfri/asdf-terraform
 asdf plugin-add scala https://github.com/mtatheonly/asdf-scala
 asdf plugin-add R https://github.com/iroddis/asdf-R.git
+asdf plugin-add php https://github.com/odarriba/asdf-php.git
 
 rm -rf $HOME/.tool-versions
 touch $HOME/.tool-versions
@@ -90,3 +91,7 @@ echo "scala 2.12.2" >> $HOME/.tool-versions
 asdf install R 3.4.3
 
 echo "R 3.4.3" >> $HOME/.tool-versions
+
+asdf install php 7.2.11 
+
+echo "php 7.2.11" >> $HOME/.tool-versions
