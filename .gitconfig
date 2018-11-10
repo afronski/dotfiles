@@ -1,6 +1,5 @@
 [user]
-	email = afronski@gmail.com
-	name = Wojciech Gawronski
+	useConfigOnly = true
 [push]
 	default = simple
 [alias]
