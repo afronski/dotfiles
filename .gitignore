@@ -25,6 +25,9 @@
 /.config/*
 !/.config/htop/
 !/.config/htop/htoprc
+!/.config/joplin-desktop/
+/.config/joplin-desktop/*
+!/.config/joplin-desktop/userstyle.css
 
 !/.emacs.d/
 /.emacs.d/*
