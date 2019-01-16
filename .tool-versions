@@ -8,7 +8,7 @@ elixir 1.7.4
 packer 1.1.1
 terraform 0.10.7
 
-golang 1.8.4
+golang 1.11
 
 clojure 1.8.0
 
