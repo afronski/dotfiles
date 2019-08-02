@@ -6,7 +6,7 @@ erlang 21.2.2
 elixir 1.7.4
 
 packer 1.1.1
-terraform 0.10.7
+terraform 0.11.14
 
 golang 1.11
 
