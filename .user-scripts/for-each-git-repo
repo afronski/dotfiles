@@ -7,13 +7,13 @@ fi
 
 for DIR in *; do
     if [ -d "$DIR" ]; then
-        pushd $DIR 2>&1 > /dev/null
+        cd $DIR 2>&1 > /dev/null
 
         if [ -d ".git" ]; then
             echo "$DIR:"
             eval "$1"
         fi
     
-        popd 2>&1 > /dev/null
+        cd - 2>&1 > /dev/null
     fi
 done
