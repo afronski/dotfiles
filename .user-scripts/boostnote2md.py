@@ -47,19 +47,26 @@ def read_folder_names(fp):
     return {x['key']: x['name'] for x in data['folders']}
 
 
+def sanitize(s):
+    return re.sub(r'\-$', '', re.sub(r'^\-', '', re.sub(r'\-+', '-', re.sub(r'[^A-Za-zżółćęśąźń0-9\/\-]+', '-', s.lower()))))
+
 def write_boostnote_markdown(data, output, folder_map, old_name, notes_dir):
     """write boostnote dict to markdown"""
     target_dir = os.path.join(output, folder_map[data['folder']].replace('/', '-'))
+    target_dir = sanitize(target_dir)
+
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
     folder_name = data['title'].replace('/', '-')
+    folder_name = sanitize(folder_name)
+
     target_file = os.path.join(target_dir, '{}.md'.format(folder_name))
 
     with open(target_file, 'w') as f:
         content = data.get('content', '')
 
-        fmt = '\:storage\/([A-Za-z0-9\-]+)/([A-Za-z0-9]+\.[A-Za-z0-9]+)'
+        fmt = r'\:storage\/([A-Za-z0-9\-]+)/([A-Za-z0-9]+\.[A-Za-z0-9]+)'
         images = [m for m in re.finditer(fmt, content)]
 
         for i in images:
