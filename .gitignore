@@ -15,6 +15,7 @@
 
 !/.user-scripts/
 /.user-scripts/ngrok
+/.user-scripts/nosql-workbench
 /.user-scripts/lein
 /.user-scripts/ninja
 /.user-scripts/wrk
