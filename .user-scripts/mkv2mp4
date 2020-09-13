@@ -3,6 +3,6 @@
 INDEX=1
 
 for I in *.mkv; do
-  echo "ffmpeg -i ${I} -codec copy ${INDEX}.mp4"
+  ffmpeg -i '${I}' -codec copy '${INDEX}.mp4'
   INDEX=$((INDEX+1))
 done
