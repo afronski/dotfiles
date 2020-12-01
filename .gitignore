@@ -53,3 +53,9 @@
 
 !/.tool-versions
 !/.default-gems
+
+!/.vimrc
+!/.vim/
+/.vim/.netrwhist
+!/.vim/autoload/
+/.vim/bundle/
