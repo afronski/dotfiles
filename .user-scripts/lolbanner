@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf $argv | lolcat
