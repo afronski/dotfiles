@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+# By Darko Mesaros: https://gist.github.com/darko-mesaros/ab84308fa9c38e120b9069830883ad38
 figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf $argv | lolcat
