@@ -29,3 +29,5 @@ python 3.6.11 2.7.18
 java corretto-8.265.01.1
 
 rust 1.49.0
+
+julia 1.6.3
