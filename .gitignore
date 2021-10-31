@@ -22,6 +22,7 @@
 /.user-scripts/wrk2
 /.user-scripts/rebar3
 /.user-scripts/kfctl
+/.user-scripts/aws-iam-authenticator
 
 !/.config/
 /.config/*
