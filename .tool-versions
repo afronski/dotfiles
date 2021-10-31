@@ -32,3 +32,6 @@ java corretto-8.265.01.1
 rust 1.49.0
 
 julia 1.6.3
+
+kubectl 1.22.0
+eksctl 0.70.0
